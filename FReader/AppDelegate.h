@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class MMDrawerController;
+@class FRFeedController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) MMDrawerController *drawerController;
+@property (nonatomic, strong) FRFeedController *feedController;
 
++ (AppDelegate *)appDelegate;
 
 @end
 

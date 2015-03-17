@@ -12,25 +12,34 @@
 #import "FRFeedController.h"
 #import "FRFeedManager.h"
 
+static AppDelegate *g_appDelegate;
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
++ (AppDelegate *)appDelegate
+{
+    return g_appDelegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    g_appDelegate = self;
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     FRSubscriptionController *subscriptionController = [[FRSubscriptionController alloc] init];
-    FRFeedController *feedController = [[FRFeedController alloc] init];
-    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:feedController leftDrawerViewController:subscriptionController];
-    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    self.feedController = [[FRFeedController alloc] init];
+    UINavigationController *centerNavController = [[UINavigationController alloc] initWithRootViewController:self.feedController];
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNavController leftDrawerViewController:subscriptionController];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
-    self.window.rootViewController = drawerController;
+    self.window.rootViewController = self.drawerController;
     [self.window makeKeyAndVisible];
     
     [[FRFeedManager sharedInstance] updateFeedInfos];

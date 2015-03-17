@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSMutableDictionary *feedRequestDic;
 @property (nonatomic, strong) NSMutableDictionary *feedInfoRequestDic;
 @property (nonatomic, strong) NSMutableDictionary *feedInfoDic;
+@property (nonatomic, strong) NSMutableArray *URLList;
 
 @end
 
@@ -42,7 +43,17 @@
 
 - (NSArray *)feedURLList
 {
-    return [NSMutableArray arrayWithObjects:@"http://macshuo.com/?feed=rss2", nil];
+    if (self.URLList) {
+        return self.URLList;
+    }
+    
+    NSString *feedList = [[NSBundle mainBundle] pathForResource:@"rss.txt" ofType:nil];
+    if (feedList) {
+        NSString *content = [NSString stringWithContentsOfFile:feedList encoding:NSUTF8StringEncoding error:nil];
+        NSArray *array = [content componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        self.URLList = [NSMutableArray arrayWithArray:array];
+    }
+    return self.URLList;
 }
 
 - (void)updateFeedInfos

@@ -20,6 +20,8 @@
 		59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385581AB4311600D43FB5 /* AppDelegate.m */; };
 		59D385611AB4311600D43FB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D385601AB4311600D43FB5 /* Images.xcassets */; };
 		59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D385621AB4311600D43FB5 /* LaunchScreen.xib */; };
+		B21915081AB6A2DB00027429 /* rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = B21915071AB6A2DB00027429 /* rss.txt */; };
+		B219150B1AB6A6C500027429 /* FRFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B219150A1AB6A6C500027429 /* FRFeedCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,9 @@
 		59D385601AB4311600D43FB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59D385631AB4311600D43FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		94161152B01378CFDD761650 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B21915071AB6A2DB00027429 /* rss.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rss.txt; sourceTree = "<group>"; };
+		B21915091AB6A6C500027429 /* FRFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedCell.h; sourceTree = "<group>"; };
+		B219150A1AB6A6C500027429 /* FRFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,8 @@
 				595029761AB5A8BD00DE16C2 /* FRSubscriptionCell.m */,
 				5950295E1AB43D8E00DE16C2 /* FRFeedController.h */,
 				5950295F1AB43D8E00DE16C2 /* FRFeedController.m */,
+				B21915091AB6A6C500027429 /* FRFeedCell.h */,
+				B219150A1AB6A6C500027429 /* FRFeedCell.m */,
 				595029651AB5252E00DE16C2 /* FRBaseModel.h */,
 				595029661AB5252E00DE16C2 /* FRBaseModel.m */,
 				595029681AB5258700DE16C2 /* FRFeedInfoModel.h */,
@@ -131,6 +138,7 @@
 		59D385531AB4311600D43FB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B21915071AB6A2DB00027429 /* rss.txt */,
 				59D385541AB4311600D43FB5 /* Info.plist */,
 				59D385551AB4311600D43FB5 /* main.m */,
 			);
@@ -196,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21915081AB6A2DB00027429 /* rss.txt in Resources */,
 				59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */,
 				59D385611AB4311600D43FB5 /* Images.xcassets in Resources */,
 			);
@@ -251,6 +260,7 @@
 				5950296A1AB5258700DE16C2 /* FRFeedInfoModel.m in Sources */,
 				595029771AB5A8BD00DE16C2 /* FRSubscriptionCell.m in Sources */,
 				595029671AB5252E00DE16C2 /* FRBaseModel.m in Sources */,
+				B219150B1AB6A6C500027429 /* FRFeedCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +295,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: liu nan (68YF54VQAZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liu nan (68YF54VQAZ)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -305,6 +316,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,6 +339,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: liu nan (68YF54VQAZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -340,6 +353,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -356,7 +370,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
 			};
 			name = Debug;
 		};
@@ -365,11 +379,12 @@
 			baseConfigurationReference = 94161152B01378CFDD761650 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: liu nan (68YF54VQAZ)";
 				INFOPLIST_FILE = FReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
 			};
 			name = Release;
 		};

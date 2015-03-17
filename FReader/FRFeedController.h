@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class FRFeedInfoModel;
+
 @interface FRFeedController : UIViewController
+
+@property (nonatomic, copy) NSString *feedURL;
 
 @end

@@ -10,6 +10,9 @@
 #import "FRPublicDefine.h"
 #import "FRFeedManager.h"
 #import "FRSubscriptionCell.h"
+#import "AppDelegate.h"
+#import "MMDrawerController.h"
+#import "FRFeedController.h"
 
 @interface FRSubscriptionController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -73,6 +76,14 @@
     
     cell.feedURL = self.feedURLList[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *url = self.feedURLList[indexPath.row];
+    FRFeedController *feedController = [AppDelegate appDelegate].feedController;
+    feedController.feedURL = url;
+    [[AppDelegate appDelegate].drawerController closeDrawerAnimated:YES completion:nil];
 }
 
 @end
