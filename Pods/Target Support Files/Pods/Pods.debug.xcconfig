@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MMDrawerController" "${PODS_ROOT}/Headers/Public/MWFeedParser"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MMDrawerController" -isystem "${PODS_ROOT}/Headers/Public/MWFeedParser"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-MMDrawerController" -l"Pods-MWFeedParser" -framework "QuartzCore"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AnimatedGIFImageSerialization" "${PODS_ROOT}/Headers/Public/MMDrawerController" "${PODS_ROOT}/Headers/Public/MWFeedParser" "${PODS_ROOT}/Headers/Public/UzysAnimatedGifPullToRefresh"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AnimatedGIFImageSerialization" -isystem "${PODS_ROOT}/Headers/Public/MMDrawerController" -isystem "${PODS_ROOT}/Headers/Public/MWFeedParser" -isystem "${PODS_ROOT}/Headers/Public/UzysAnimatedGifPullToRefresh"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AnimatedGIFImageSerialization" -l"Pods-MMDrawerController" -l"Pods-MWFeedParser" -l"Pods-UzysAnimatedGifPullToRefresh" -framework "CoreGraphics" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

@@ -2,7 +2,7 @@
 //  FRFeedController.m
 //  FReader
 //
-//  Created by honey.vi on 15/3/14.
+//  Created by itedliu@qq.com on 15/3/14.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
@@ -14,11 +14,11 @@
 #import "MMDrawerBarButtonItem.h"
 #import "AppDelegate.h"
 #import "MMDrawerController.h"
+#import "FRFeedDetailController.h"
 
-@interface FRFeedController () <UITableViewDelegate, UITableViewDataSource>
+@interface FRFeedController ()
 
 @property (nonatomic, strong) FRFeedInfoModel *feedInfoModel;
-@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -27,14 +27,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
     [self setupLeftMenuButton];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onReceiveFeeds:) name:kFeedRequestFinishNotification object:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    
+    if (self.feedURL.length == 0) {
+        NSString *firstURL = [[FRFeedManager sharedInstance] feedURLList].firstObject ;
+        self.feedURL = firstURL;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
 }
 
 - (void)setupLeftMenuButton
@@ -54,11 +65,27 @@
         return;
     }
     
+    _feedURL = feedURL;
+    
     FRFeedInfoModel *infoModel = [[FRFeedManager sharedInstance] feedInfoWithURL:feedURL];
     if (infoModel) {
         self.feedInfoModel = infoModel;
+        self.title = infoModel.title;
     }
-    [[FRFeedManager sharedInstance] requestFeedList:feedURL];
+    
+    if (infoModel.feedModelList.count == 0) {
+        [self triggerPullToRefresh];
+    }
+}
+
+- (void)onRefresh
+{
+    if (self.feedURL.length > 0) {
+        [[FRFeedManager sharedInstance] requestFeedList:self.feedURL];
+    }
+    else {
+        [self stopRefresh];
+    }
 }
 
 - (void)setFeedInfoModel:(FRFeedInfoModel *)feedInfoModel
@@ -71,8 +98,16 @@
 {
     NSDictionary *dic = notification.object;
     FRFeedInfoModel *infoModel = dic[@"FeedInfo"];
-    if ([self.feedInfoModel.url isEqualToString:infoModel.url]) {
+    BOOL onlyFeedInfo = [dic[@"OnlyInfo"] boolValue];
+    
+    if ([self.feedURL isEqualToString:infoModel.url]) {
+        self.title = infoModel.title;
+        if (onlyFeedInfo) {
+            return;
+        }
         self.feedInfoModel = infoModel;
+        [self.tableView reloadData];
+        [self stopRefresh];
     }
 }
 
@@ -97,6 +132,14 @@
     FRFeedModel *feedModel = self.feedInfoModel.feedModelList[indexPath.row];
     cell.feedModel = feedModel;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FRFeedModel *feedModel = self.feedInfoModel.feedModelList[indexPath.row];
+    FRFeedDetailController *detailController = [[FRFeedDetailController alloc] init];
+    detailController.feedModel = feedModel;
+    [self.navigationController pushViewController:detailController animated:YES];
 }
 
 @end

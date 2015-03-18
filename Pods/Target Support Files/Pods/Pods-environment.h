@@ -6,6 +6,12 @@
 // project.
 
 
+// AnimatedGIFImageSerialization
+#define COCOAPODS_POD_AVAILABLE_AnimatedGIFImageSerialization
+#define COCOAPODS_VERSION_MAJOR_AnimatedGIFImageSerialization 0
+#define COCOAPODS_VERSION_MINOR_AnimatedGIFImageSerialization 2
+#define COCOAPODS_VERSION_PATCH_AnimatedGIFImageSerialization 0
+
 // MMDrawerController
 #define COCOAPODS_POD_AVAILABLE_MMDrawerController
 #define COCOAPODS_VERSION_MAJOR_MMDrawerController 0
@@ -59,4 +65,10 @@
 #define COCOAPODS_VERSION_MAJOR_MWFeedParser_NSString_HTML 1
 #define COCOAPODS_VERSION_MINOR_MWFeedParser_NSString_HTML 0
 #define COCOAPODS_VERSION_PATCH_MWFeedParser_NSString_HTML 1
+
+// UzysAnimatedGifPullToRefresh
+#define COCOAPODS_POD_AVAILABLE_UzysAnimatedGifPullToRefresh
+#define COCOAPODS_VERSION_MAJOR_UzysAnimatedGifPullToRefresh 0
+#define COCOAPODS_VERSION_MINOR_UzysAnimatedGifPullToRefresh 9
+#define COCOAPODS_VERSION_PATCH_UzysAnimatedGifPullToRefresh 5
 

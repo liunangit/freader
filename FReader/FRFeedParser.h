@@ -2,7 +2,7 @@
 //  FRFeedParser.h
 //  FReader
 //
-//  Created by honey.vi on 15/3/15.
+//  Created by itedliu@qq.com on 15/3/15.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
@@ -15,8 +15,8 @@
 @protocol FRFeedParserDelegate <NSObject>
 
 @optional
-- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo;
-- (void)feedParserFailed:(NSString *)URL error:(NSError *)error;
+- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo parser:(FRFeedParser *)feedParser;
+- (void)feedParserFailed:(FRFeedParser *)feedParser url:(NSString *)URL error:(NSError *)error;
 
 @end
 

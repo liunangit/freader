@@ -1,4 +1,5 @@
 PODS:
+  - AnimatedGIFImageSerialization (0.2.0)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
@@ -20,13 +21,18 @@ PODS:
     - MWFeedParser/NSString+HTML
   - MWFeedParser/NSDate+InternetDateTime (1.0.1)
   - MWFeedParser/NSString+HTML (1.0.1)
+  - UzysAnimatedGifPullToRefresh (0.9.5):
+    - AnimatedGIFImageSerialization (~> 0.2.0)
 
 DEPENDENCIES:
   - MMDrawerController (~> 0.5.7)
   - MWFeedParser
+  - UzysAnimatedGifPullToRefresh (~> 0.9.5)
 
 SPEC CHECKSUMS:
+  AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
   MMDrawerController: c3ab7a318ddc7e2bcd133139c3161af08c6e1197
   MWFeedParser: 003cbf5398e99a7f2057fbe9583054fd1b84be72
+  UzysAnimatedGifPullToRefresh: a9d87bab174154c955fbd3f4af6d83b493d45a8d
 
 COCOAPODS: 0.36.0

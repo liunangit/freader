@@ -2,7 +2,7 @@
 //  FRFeedManager.m
 //  FReader
 //
-//  Created by honey.vi on 15/3/15.
+//  Created by itedliu@qq.com on 15/3/15.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
@@ -86,7 +86,12 @@
 
 - (void)requestFeedList:(NSString *)url
 {
-    FRFeedParser *parser = [[FRFeedParser alloc] initWithURL:url];
+    FRFeedParser *parser = self.feedRequestDic[url];
+    if (parser) {
+        return;
+    }
+    
+    parser = [[FRFeedParser alloc] initWithURL:url];
     parser.delegate = self;
     self.feedRequestDic[url] = parser;
     [parser startParser];
@@ -101,24 +106,60 @@
     }
 }
 
-- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo
+- (FRFeedInfoModel *)mergeFeedInfo:(FRFeedInfoModel *)oneModel with:(FRFeedInfoModel *)anotherModel
 {
-    if (feedInfo) {
-        self.feedInfoDic[feedInfo.url] = feedInfo;
+    NSString *url = oneModel.url;
+    if (url.length == 0) {
+        url = anotherModel.url;
     }
     
-    [self.feedRequestDic removeObjectForKey:feedInfo.url];
-    [self.feedInfoRequestDic removeObjectForKey:feedInfo.url];
+    NSString *title = oneModel.title;
+    if (title.length == 0) {
+        title = anotherModel.title;
+    }
     
-    NSDictionary *dic = @{@"URL":feedInfo.url, @"FeedInfo":feedInfo};
+    NSArray *feedList = oneModel.feedModelList;
+    if (feedList.count == 0) {
+        feedList = anotherModel.feedModelList;
+    }
+    
+    FRFeedInfoModel *newModel = [[FRFeedInfoModel alloc] init];
+    newModel.url = url;
+    newModel.title = title;
+    newModel.feedModelList = feedList;
+    return newModel;
+}
+
+- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo parser:(FRFeedParser *)feedParser
+{
+    if (feedInfo) {
+        FRFeedInfoModel *feedModel = self.feedInfoDic[feedInfo.url];
+        FRFeedInfoModel *latestModel = [self mergeFeedInfo:feedModel with:feedInfo];
+        self.feedInfoDic[feedInfo.url] = latestModel;
+        feedInfo = latestModel;
+    }
+    
+    if (feedParser.onlyFeedInfo) {
+        [self.feedInfoRequestDic removeObjectForKey:feedInfo.url];
+    }
+    else {
+        [self.feedRequestDic removeObjectForKey:feedInfo.url];
+    }
+    
+    NSDictionary *dic = @{@"URL":feedInfo.url, @"FeedInfo":feedInfo, @"OnlyInfo": @(feedParser.onlyFeedInfo)};
     [[NSNotificationCenter defaultCenter] postNotificationName:kFeedRequestFinishNotification object:dic];
 }
 
-- (void)feedParserFailed:(NSString *)URL error:(NSError *)error
+- (void)feedParserFailed:(FRFeedParser *)feedParser url:(NSString *)URL error:(NSError *)error
 {
-    [self.feedRequestDic removeObjectForKey:URL];
-    [self.feedInfoRequestDic removeObjectForKey:URL];
-    NSDictionary *dic = @{@"URL": URL, @"error": error};
+    if (feedParser.onlyFeedInfo) {
+        [self.feedInfoRequestDic removeObjectForKey:URL];
+    }
+    else {
+        [self.feedRequestDic removeObjectForKey:URL];
+    }
+    
+    NSDictionary *dic = @{@"URL": URL, @"error": error, @"OnlyInfo": @(feedParser.onlyFeedInfo)};
     [[NSNotificationCenter defaultCenter] postNotificationName:kFeedRequestFinishNotification object:dic];
 }
 

@@ -20,6 +20,13 @@
 		59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385581AB4311600D43FB5 /* AppDelegate.m */; };
 		59D385611AB4311600D43FB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D385601AB4311600D43FB5 /* Images.xcassets */; };
 		59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D385621AB4311600D43FB5 /* LaunchScreen.xib */; };
+		B205CF491AB90EA000533E67 /* FRFeedDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF481AB90EA000533E67 /* FRFeedDetailController.m */; };
+		B205CF791AB998DE00533E67 /* FRPullRefreshBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */; };
+		B205CF801AB99B0800533E67 /* cupido@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7B1AB99B0800533E67 /* cupido@2x.gif */; };
+		B205CF811AB99B0800533E67 /* jgr@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7C1AB99B0800533E67 /* jgr@2x.gif */; };
+		B205CF821AB99B0800533E67 /* Preloader_10@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7D1AB99B0800533E67 /* Preloader_10@2x.gif */; };
+		B205CF831AB99B0800533E67 /* run@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7E1AB99B0800533E67 /* run@2x.gif */; };
+		B205CF841AB99B0800533E67 /* spinner_dropbox@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7F1AB99B0800533E67 /* spinner_dropbox@2x.gif */; };
 		B21915081AB6A2DB00027429 /* rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = B21915071AB6A2DB00027429 /* rss.txt */; };
 		B219150B1AB6A6C500027429 /* FRFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B219150A1AB6A6C500027429 /* FRFeedCell.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +59,15 @@
 		59D385601AB4311600D43FB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59D385631AB4311600D43FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		94161152B01378CFDD761650 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B205CF471AB90EA000533E67 /* FRFeedDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedDetailController.h; sourceTree = "<group>"; };
+		B205CF481AB90EA000533E67 /* FRFeedDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedDetailController.m; sourceTree = "<group>"; };
+		B205CF771AB998DE00533E67 /* FRPullRefreshBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPullRefreshBaseController.h; sourceTree = "<group>"; };
+		B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPullRefreshBaseController.m; sourceTree = "<group>"; };
+		B205CF7B1AB99B0800533E67 /* cupido@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cupido@2x.gif"; sourceTree = "<group>"; };
+		B205CF7C1AB99B0800533E67 /* jgr@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jgr@2x.gif"; sourceTree = "<group>"; };
+		B205CF7D1AB99B0800533E67 /* Preloader_10@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Preloader_10@2x.gif"; sourceTree = "<group>"; };
+		B205CF7E1AB99B0800533E67 /* run@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "run@2x.gif"; sourceTree = "<group>"; };
+		B205CF7F1AB99B0800533E67 /* spinner_dropbox@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "spinner_dropbox@2x.gif"; sourceTree = "<group>"; };
 		B21915071AB6A2DB00027429 /* rss.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rss.txt; sourceTree = "<group>"; };
 		B21915091AB6A6C500027429 /* FRFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedCell.h; sourceTree = "<group>"; };
 		B219150A1AB6A6C500027429 /* FRFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedCell.m; sourceTree = "<group>"; };
@@ -81,6 +97,7 @@
 		31AE012A43F2B1AE19457778 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B205CF7A1AB99B0800533E67 /* Resources */,
 				4B7591AFEBA481A18AA1BC69 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -110,12 +127,16 @@
 				59D385571AB4311600D43FB5 /* AppDelegate.h */,
 				59D385581AB4311600D43FB5 /* AppDelegate.m */,
 				595029741AB5852D00DE16C2 /* FRPublicDefine.h */,
+				B205CF771AB998DE00533E67 /* FRPullRefreshBaseController.h */,
+				B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */,
 				5950295B1AB43CC100DE16C2 /* FRSubscriptionController.h */,
 				5950295C1AB43CC100DE16C2 /* FRSubscriptionController.m */,
 				595029751AB5A8BD00DE16C2 /* FRSubscriptionCell.h */,
 				595029761AB5A8BD00DE16C2 /* FRSubscriptionCell.m */,
 				5950295E1AB43D8E00DE16C2 /* FRFeedController.h */,
 				5950295F1AB43D8E00DE16C2 /* FRFeedController.m */,
+				B205CF471AB90EA000533E67 /* FRFeedDetailController.h */,
+				B205CF481AB90EA000533E67 /* FRFeedDetailController.m */,
 				B21915091AB6A6C500027429 /* FRFeedCell.h */,
 				B219150A1AB6A6C500027429 /* FRFeedCell.m */,
 				595029651AB5252E00DE16C2 /* FRBaseModel.h */,
@@ -143,6 +164,19 @@
 				59D385551AB4311600D43FB5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B205CF7A1AB99B0800533E67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B205CF7B1AB99B0800533E67 /* cupido@2x.gif */,
+				B205CF7C1AB99B0800533E67 /* jgr@2x.gif */,
+				B205CF7D1AB99B0800533E67 /* Preloader_10@2x.gif */,
+				B205CF7E1AB99B0800533E67 /* run@2x.gif */,
+				B205CF7F1AB99B0800533E67 /* spinner_dropbox@2x.gif */,
+			);
+			name = Resources;
+			path = FReader/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +238,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B205CF841AB99B0800533E67 /* spinner_dropbox@2x.gif in Resources */,
 				B21915081AB6A2DB00027429 /* rss.txt in Resources */,
 				59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */,
 				59D385611AB4311600D43FB5 /* Images.xcassets in Resources */,
+				B205CF821AB99B0800533E67 /* Preloader_10@2x.gif in Resources */,
+				B205CF831AB99B0800533E67 /* run@2x.gif in Resources */,
+				B205CF811AB99B0800533E67 /* jgr@2x.gif in Resources */,
+				B205CF801AB99B0800533E67 /* cupido@2x.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B205CF791AB998DE00533E67 /* FRPullRefreshBaseController.m in Sources */,
 				59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */,
 				595029731AB534DD00DE16C2 /* FRFeedParser.m in Sources */,
+				B205CF491AB90EA000533E67 /* FRFeedDetailController.m in Sources */,
 				595029701AB52D5C00DE16C2 /* FRFeedManager.m in Sources */,
 				5950296D1AB525FF00DE16C2 /* FRFeedModel.m in Sources */,
 				595029601AB43D8E00DE16C2 /* FRFeedController.m in Sources */,

@@ -7,376 +7,559 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0702B0744287CEB8D31B7B81 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A057CA315C7BB50E40B2FA52 /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1AB9190E81A038AC131F4AC6 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99FC0B9B36C274CAD5DE32 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1FCD26F96602E6A2ACB08501 /* NSDate+InternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F9483B45895A7A857CD813 /* NSDate+InternetDateTime.h */; };
-		20BEF7C6C1B4F7A75F9EB8BE /* MWFeedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A46DB6E05E5B9C7B768630A0 /* MWFeedParser.h */; };
-		26B84B99AF7DF7535D328922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FBAC4B4BE2CA09682A6065 /* Foundation.framework */; };
-		270CDE2D84C7F757AC4BEBEF /* Pods-MWFeedParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ADA2D3C36361DF4A18CFE7 /* Pods-MWFeedParser-dummy.m */; };
-		27B2908B0989BE21715474B2 /* MWFeedParser_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D10B392707C66F0D755A770E /* MWFeedParser_Private.h */; };
-		29BC8B9706852BCA72D7AB4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FBAC4B4BE2CA09682A6065 /* Foundation.framework */; };
-		2D6861FD991D261C3FE4BB60 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FB1E9994712CC2307DEC44 /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3B5EBE8D8E48CBBDCAF126F5 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F6835FAF58ACF014E01FB98D /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4968514C0A2F1BAD080AF60F /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2807A065E3C1039B4D5D849F /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4FF6B0B187B4208C52CBEB72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0E68C13F506D8C7E0AEDC4 /* QuartzCore.framework */; };
-		7A6F975743D7240494C89BEB /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8673B054C3270C89BDC3347E /* MMDrawerController+Subclass.h */; };
-		815B17BE86978B2CCE8D2BC0 /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9A4A8BEBA1665505C6198A /* MMDrawerController.h */; };
-		824E9912CDF4F04CBB701F9A /* MWFeedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE9BFD62FBE289AAE4DFD5E /* MWFeedItem.h */; };
-		8DCB4979A94F4611860BA0F7 /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = E19D1C5A579BD9F3BF417DBD /* MMDrawerVisualState.h */; };
-		90D2D44817DB940B30D45949 /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CD20B71457FF00B4FCABA6 /* UIViewController+MMDrawerController.h */; };
-		9AF789908E1AA282AEDC2E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FBAC4B4BE2CA09682A6065 /* Foundation.framework */; };
-		9B4AE312A1FE47DC9ED79153 /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7F08F0BCBA1D62308AF3D9 /* MMDrawerBarButtonItem.h */; };
-		9B59BA5F16AECDAF71D73FEF /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = A683A41675F226FBC48E98E9 /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9E07E253A12FBA2F41C4B832 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F4BE538B602C6FA1E77D87 /* GTMNSString+HTML.h */; };
-		B22FA955E073261BB90ABF7C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 870325C7BE78864438472531 /* Pods-dummy.m */; };
-		C9EE048A3950996B084A4BB4 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A148E079707630E0FB8172E8 /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D29D13E2EFAE42A26EF82990 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2161B5E4DD5DDE9E9EE3FD /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D4588DA073C6B1A5674B3094 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB3199EB085014AC6A16C0 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EA0E0C2DAA557A206A921B3A /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = A7830E89D4BBD404F5A4EA10 /* NSString+HTML.h */; };
-		F1B28394FB89C06A2F47345B /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4373615C16CD628D2E423934 /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F50AFE5BEEEDC9D1B9AE2034 /* Pods-MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E42A00EEFC46AF629F8812 /* Pods-MMDrawerController-dummy.m */; };
-		F98679FE933D759555CA11E5 /* MWFeedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3128AE3E1342C55033D7B759 /* MWFeedInfo.h */; };
-		FD52428B488E3413EF149770 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8673B054C3270C89BDC3347E /* MMDrawerController+Subclass.h */; };
+		04F427E2D5BBA631644086DF /* UzysAnimatedGifPullToRefreshConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B25AEE99A38B621947C62EC0 /* UzysAnimatedGifPullToRefreshConfiguration.h */; };
+		0D500C5D64284EAD611F6C7D /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C508F455786F480165FD00 /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10DF2BAA3C0BC0CD4CE7483E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
+		1D8D8345A6EAA51D8BD1FE21 /* Pods-MWFeedParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B991CDACCDB72A8490624B77 /* Pods-MWFeedParser-dummy.m */; };
+		1E6975AD8940946C78F5D375 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35D13BDB223622D4C627991 /* MobileCoreServices.framework */; };
+		21E4893CE83C9A50A310F261 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D574E27AB0EEE88C0D7D07 /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		21E6C29F7B4CA9AC762C237D /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFBEF2D4868C1E200623F99 /* MMDrawerVisualState.h */; };
+		294DE7D33943A0FB25451CA5 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BF10E6B7E212CE5F4FCB83 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3858EC58A6D31DB44AE509BE /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F27DA9E526B92C007C49598C /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3CC098EA07E6575B0AE2DE7F /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8639FC311B92F04757A415C8 /* MMDrawerController+Subclass.h */; };
+		454C22E3CB73B9E3B730E6AE /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79377E7509467D546D2061 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4AEC3016FBF878748901683A /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C1AC7291C9606E87EFAF9D /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5118E82FAEB7D1DFE13B744D /* NSDate+InternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 0330DB19B41714D96C37FA6E /* NSDate+InternetDateTime.h */; };
+		51633EA6695AD49631EBC605 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36B5732CF5604E1DF17134D /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		533DE2896897344B67C5AE4D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A59358635840DC1B1825C214 /* Pods-dummy.m */; };
+		59ED70D2694B95BD8CCDB027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
+		5D44988125FE45F04B85EF94 /* Pods-UzysAnimatedGifPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A18BEFC98EB0E04CF1E91080 /* Pods-UzysAnimatedGifPullToRefresh-dummy.m */; };
+		5DB60AB49CF44B24387ECF94 /* UzysAnimatedGifActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = F33217641AC863EC653FCF91 /* UzysAnimatedGifActivityIndicator.h */; };
+		6418F59DA0DFF5E7D206326E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
+		6475104B7F774C589607E1C7 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2950E8A1C1E0E9A86E323DB5 /* AnimatedGIFImageSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		651DAECDBEC66670A1D77DAE /* Pods-MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8E6836BD762E47F3D24098 /* Pods-MMDrawerController-dummy.m */; };
+		68F2CF62DA80FEC1CC1AE46C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDEB6131B3694FA82759D46 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A286769EFAD5D3A0DABE43A /* MWFeedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6213A9C9D0AE615F74C912AF /* MWFeedItem.h */; };
+		6A4FC2560A92D5596ED732F5 /* MWFeedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCFFF0A8DB095DFBBE6F119 /* MWFeedInfo.h */; };
+		76503C5D5DAD0781D9B91B55 /* MWFeedParser_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A2B4567AEEDF7ABDB7DC31 /* MWFeedParser_Private.h */; };
+		79BBB644F62DB4802A2C487B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9EBD2A149F3091E0E5882A /* QuartzCore.framework */; };
+		7A5A949DF39CD622EC3EADA5 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8639FC311B92F04757A415C8 /* MMDrawerController+Subclass.h */; };
+		83B7969F5268CD3DE90B9BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
+		8495B6EE2D433C22D9816470 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 462BE544AC3871695ED3737C /* GTMNSString+HTML.h */; };
+		8AEA6D6AD97E5461C91F2038 /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666A6D28801884692087D196 /* MMDrawerController.h */; };
+		8E3F09EAD80A2FD023166098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
+		9E01C3D64C01BD19810D6913 /* UIScrollView+UzysAnimatedGifPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD54060E07CD5821D536E6B /* UIScrollView+UzysAnimatedGifPullToRefresh.h */; };
+		A6138BA092D9EC73D0151585 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47BD8F400EE498AA08F3A45 /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B4709F4684BA98CC69FBF3AB /* MWFeedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BCF58B0AECFD4869F8C5ACD /* MWFeedParser.h */; };
+		BDA38DEBBBB8E1142D2268E2 /* UzysAnimatedGifActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC35A7643EFB6D4BF02635 /* UzysAnimatedGifActivityIndicator.m */; };
+		BE0FAD4FFA6B8C0C8D6AC26E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBC3A4BB52F41BACA78E0C /* ImageIO.framework */; };
+		CEC4AA542A34D7A00F670E3E /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7043B4159F49232524FCB8 /* NSString+HTML.h */; };
+		DA5C2075956DD982C03ABBFC /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D91BF830DAF0B1513B07C0AA /* MMDrawerBarButtonItem.h */; };
+		DCF853565592BE00AAAE4BD1 /* Pods-AnimatedGIFImageSerialization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210A85B4637CB1223FBFC73 /* Pods-AnimatedGIFImageSerialization-dummy.m */; };
+		E3917DF5460D69CE1F6C3537 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CD7DA98625EDFE453F851D /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E8A5CAB9F6DB65DED4305854 /* AnimatedGIFImageSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 25647AE2476A9D07C1E6F420 /* AnimatedGIFImageSerialization.h */; };
+		EC5CAD564FED2A54B8375C26 /* UIScrollView+UzysAnimatedGifPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEBAE3CD1745AFF1AB2CF0 /* UIScrollView+UzysAnimatedGifPullToRefresh.m */; };
+		FE928234CB0737B1AD92B16E /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D540546B1A8C9743EEE23E /* UIViewController+MMDrawerController.h */; };
+		FEEDE0AB01873E7DBFA07E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BDC13E65A3A45A1C1306AC /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7E490C4218E05E4C16348BC3 /* PBXContainerItemProxy */ = {
+		A0ED6143CB5D12DC755C8D96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13030F693221A3CE0C173AE6 /* Project object */;
+			containerPortal = D2E8D54508DE26B27C52CCCF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A71CA51E3B08DCC3A438600B;
+			remoteGlobalIDString = 35D6270EE231C1585B36F7F8;
+			remoteInfo = "Pods-AnimatedGIFImageSerialization";
+		};
+		B6060A9A06FB5E552FED70D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2E8D54508DE26B27C52CCCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9513DB31191A9270F858B19;
 			remoteInfo = "Pods-MMDrawerController";
 		};
-		F7E013E0417CE544C74BB0B1 /* PBXContainerItemProxy */ = {
+		C353C6C7DBECB11EF8408E09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13030F693221A3CE0C173AE6 /* Project object */;
+			containerPortal = D2E8D54508DE26B27C52CCCF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 701852ED3EFEF67A27E22141;
+			remoteGlobalIDString = 69962E93A941871F31602848;
+			remoteInfo = "Pods-UzysAnimatedGifPullToRefresh";
+		};
+		DEA4973C3A064562E7F6F7EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2E8D54508DE26B27C52CCCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E9F15DAF625B96AB909788;
 			remoteInfo = "Pods-MWFeedParser";
+		};
+		E215B5F9E86B3E780EF5758F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2E8D54508DE26B27C52CCCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D6270EE231C1585B36F7F8;
+			remoteInfo = "Pods-AnimatedGIFImageSerialization";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06F4BE538B602C6FA1E77D87 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Classes/GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		0A3577EC3316325B46F16469 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		17F9483B45895A7A857CD813 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "Classes/NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
-		2807A065E3C1039B4D5D849F /* MWFeedItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedItem.m; path = Classes/MWFeedItem.m; sourceTree = "<group>"; };
-		2ACAEFA56DFBF1AE2CE1644D /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3128AE3E1342C55033D7B759 /* MWFeedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedInfo.h; path = Classes/MWFeedInfo.h; sourceTree = "<group>"; };
-		3D5CB2EA58120FFCE1AAD09A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		4373615C16CD628D2E423934 /* MWFeedParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedParser.m; path = Classes/MWFeedParser.m; sourceTree = "<group>"; };
-		47FB1E9994712CC2307DEC44 /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
-		59ADA2D3C36361DF4A18CFE7 /* Pods-MWFeedParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWFeedParser-dummy.m"; sourceTree = "<group>"; };
-		5F79E8A3A1146EF383923AC5 /* libPods-MWFeedParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWFeedParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		601C935DFB5C38BC8B5DF29A /* Pods-MWFeedParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWFeedParser-prefix.pch"; sourceTree = "<group>"; };
-		66FBAC4B4BE2CA09682A6065 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6EBB3C3D47D37EC95CC97656 /* Pods-MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
-		72CD20B71457FF00B4FCABA6 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		76D4D88DCABEAD906769D0F8 /* Pods-MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMDrawerController.xcconfig"; sourceTree = "<group>"; };
-		8673B054C3270C89BDC3347E /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		870325C7BE78864438472531 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8BE9BFD62FBE289AAE4DFD5E /* MWFeedItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedItem.h; path = Classes/MWFeedItem.h; sourceTree = "<group>"; };
-		8D2161B5E4DD5DDE9E9EE3FD /* MWFeedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedInfo.m; path = Classes/MWFeedInfo.m; sourceTree = "<group>"; };
-		91BB3199EB085014AC6A16C0 /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Classes/NSString+HTML.m"; sourceTree = "<group>"; };
-		A057CA315C7BB50E40B2FA52 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		A148E079707630E0FB8172E8 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		A46DB6E05E5B9C7B768630A0 /* MWFeedParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser.h; path = Classes/MWFeedParser.h; sourceTree = "<group>"; };
-		A683A41675F226FBC48E98E9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
-		A7830E89D4BBD404F5A4EA10 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Classes/NSString+HTML.h"; sourceTree = "<group>"; };
-		AA0E68C13F506D8C7E0AEDC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		AE7F08F0BCBA1D62308AF3D9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		B27C2132788DE492A6392FDC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		BD23543EA58708754A320E38 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE99FC0B9B36C274CAD5DE32 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Classes/GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		D10B392707C66F0D755A770E /* MWFeedParser_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser_Private.h; path = Classes/MWFeedParser_Private.h; sourceTree = "<group>"; };
-		D3422E6933F8C77AD94BBFAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		D34D2E7A74E0B2ED5E83F6C8 /* libPods-MMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDrawerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA9A4A8BEBA1665505C6198A /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
-		DC0A02BB349D12BE3D80D9CD /* Pods-MWFeedParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWFeedParser-Private.xcconfig"; sourceTree = "<group>"; };
-		E19D1C5A579BD9F3BF417DBD /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
-		E273EA115E6A1F7381C779A6 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		F341A846D056BE4B17B60D6E /* Pods-MWFeedParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWFeedParser.xcconfig"; sourceTree = "<group>"; };
-		F5F9485FF2F1E41E61772970 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F6835FAF58ACF014E01FB98D /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "Classes/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
-		F6E42A00EEFC46AF629F8812 /* Pods-MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMDrawerController-dummy.m"; sourceTree = "<group>"; };
-		FFE43B70D58680B0731F9FCA /* Pods-MMDrawerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMDrawerController-Private.xcconfig"; sourceTree = "<group>"; };
+		0330DB19B41714D96C37FA6E /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "Classes/NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		08E670526EFBB9C320FCEC6E /* Pods-UzysAnimatedGifPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UzysAnimatedGifPullToRefresh.xcconfig"; sourceTree = "<group>"; };
+		10D7E6010039EA51BD29DD75 /* libPods-UzysAnimatedGifPullToRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UzysAnimatedGifPullToRefresh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAC35A7643EFB6D4BF02635 /* UzysAnimatedGifActivityIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UzysAnimatedGifActivityIndicator.m; path = UzysAnimatedGifPullToRefresh/UzysAnimatedGifPullToRefresh/Library/UzysAnimatedGifActivityIndicator.m; sourceTree = "<group>"; };
+		205651A28855D94D1BA9B177 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		20D540546B1A8C9743EEE23E /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		25647AE2476A9D07C1E6F420 /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnimatedGIFImageSerialization.h; path = AnimatedGIFImageSerialization/AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
+		2676390C4DD8D15531C34AD0 /* Pods-AnimatedGIFImageSerialization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedGIFImageSerialization.xcconfig"; sourceTree = "<group>"; };
+		2950E8A1C1E0E9A86E323DB5 /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnimatedGIFImageSerialization.m; path = AnimatedGIFImageSerialization/AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
+		36C10725621338C8A6EB0040 /* Pods-MWFeedParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWFeedParser-prefix.pch"; sourceTree = "<group>"; };
+		3E79377E7509467D546D2061 /* MWFeedItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedItem.m; path = Classes/MWFeedItem.m; sourceTree = "<group>"; };
+		42A47F056E660BD92B987742 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		42B98724B9CDA4F15C110F52 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		42BF549913473D8C40DFCDB8 /* Pods-AnimatedGIFImageSerialization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimatedGIFImageSerialization-prefix.pch"; sourceTree = "<group>"; };
+		462BE544AC3871695ED3737C /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Classes/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		48BF10E6B7E212CE5F4FCB83 /* MWFeedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedInfo.m; path = Classes/MWFeedInfo.m; sourceTree = "<group>"; };
+		48D574E27AB0EEE88C0D7D07 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		49F6AEAD965D375CFA0F237F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9EBD2A149F3091E0E5882A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4F8E6836BD762E47F3D24098 /* Pods-MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMDrawerController-dummy.m"; sourceTree = "<group>"; };
+		5210A85B4637CB1223FBFC73 /* Pods-AnimatedGIFImageSerialization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimatedGIFImageSerialization-dummy.m"; sourceTree = "<group>"; };
+		541EA620CC156ED38394947A /* libPods-AnimatedGIFImageSerialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimatedGIFImageSerialization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C8AC24ADAF6B90FEEE4916 /* Pods-MWFeedParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWFeedParser.xcconfig"; sourceTree = "<group>"; };
+		5AFBEF2D4868C1E200623F99 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		5BCF58B0AECFD4869F8C5ACD /* MWFeedParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser.h; path = Classes/MWFeedParser.h; sourceTree = "<group>"; };
+		5FCFFF0A8DB095DFBBE6F119 /* MWFeedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedInfo.h; path = Classes/MWFeedInfo.h; sourceTree = "<group>"; };
+		6213A9C9D0AE615F74C912AF /* MWFeedItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedItem.h; path = Classes/MWFeedItem.h; sourceTree = "<group>"; };
+		666A6D28801884692087D196 /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		6BD54060E07CD5821D536E6B /* UIScrollView+UzysAnimatedGifPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+UzysAnimatedGifPullToRefresh.h"; path = "UzysAnimatedGifPullToRefresh/UzysAnimatedGifPullToRefresh/Library/UIScrollView+UzysAnimatedGifPullToRefresh.h"; sourceTree = "<group>"; };
+		6CDEB6131B3694FA82759D46 /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Classes/NSString+HTML.m"; sourceTree = "<group>"; };
+		74CD7DA98625EDFE453F851D /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "Classes/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		7894188DE208DE5CC907BDA9 /* Pods-MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMDrawerController.xcconfig"; sourceTree = "<group>"; };
+		7BD7691419E770A0DC2E8682 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7DA96D51E92FFBABAA6D6C25 /* Pods-MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		7DEEBAE3CD1745AFF1AB2CF0 /* UIScrollView+UzysAnimatedGifPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+UzysAnimatedGifPullToRefresh.m"; path = "UzysAnimatedGifPullToRefresh/UzysAnimatedGifPullToRefresh/Library/UIScrollView+UzysAnimatedGifPullToRefresh.m"; sourceTree = "<group>"; };
+		7E46B857907CCDE19C0DF7E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		85C87EC23185199531CDDE6A /* Pods-MWFeedParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWFeedParser-Private.xcconfig"; sourceTree = "<group>"; };
+		8639FC311B92F04757A415C8 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		87CBC3A4BB52F41BACA78E0C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		8FFA11A555B4621E26DB644B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		A18BEFC98EB0E04CF1E91080 /* Pods-UzysAnimatedGifPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UzysAnimatedGifPullToRefresh-dummy.m"; sourceTree = "<group>"; };
+		A50CDBCEDEB8223EF4A1BCEE /* Pods-UzysAnimatedGifPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UzysAnimatedGifPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
+		A59358635840DC1B1825C214 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		A6C1AC7291C9606E87EFAF9D /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Classes/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		B0A2B4567AEEDF7ABDB7DC31 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser_Private.h; path = Classes/MWFeedParser_Private.h; sourceTree = "<group>"; };
+		B25AEE99A38B621947C62EC0 /* UzysAnimatedGifPullToRefreshConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UzysAnimatedGifPullToRefreshConfiguration.h; path = UzysAnimatedGifPullToRefresh/UzysAnimatedGifPullToRefresh/Library/UzysAnimatedGifPullToRefreshConfiguration.h; sourceTree = "<group>"; };
+		B35D13BDB223622D4C627991 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B991CDACCDB72A8490624B77 /* Pods-MWFeedParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWFeedParser-dummy.m"; sourceTree = "<group>"; };
+		BD388D4F958828DE2ED81FEF /* Pods-AnimatedGIFImageSerialization-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedGIFImageSerialization-Private.xcconfig"; sourceTree = "<group>"; };
+		C15B25529DE0C42C7530C2AE /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5DE657BA01102B9F7A649D0 /* libPods-MMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMDrawerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03C3113CE3E5F22DD02C482 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		D36B5732CF5604E1DF17134D /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		D5E4D9D25D10B5BB098D1A5C /* libPods-MWFeedParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWFeedParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C508F455786F480165FD00 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		D91BF830DAF0B1513B07C0AA /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		DA7043B4159F49232524FCB8 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Classes/NSString+HTML.h"; sourceTree = "<group>"; };
+		EBBDDE5C45880AA33264735E /* Pods-UzysAnimatedGifPullToRefresh-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UzysAnimatedGifPullToRefresh-Private.xcconfig"; sourceTree = "<group>"; };
+		F27DA9E526B92C007C49598C /* MWFeedParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedParser.m; path = Classes/MWFeedParser.m; sourceTree = "<group>"; };
+		F33217641AC863EC653FCF91 /* UzysAnimatedGifActivityIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UzysAnimatedGifActivityIndicator.h; path = UzysAnimatedGifPullToRefresh/UzysAnimatedGifPullToRefresh/Library/UzysAnimatedGifActivityIndicator.h; sourceTree = "<group>"; };
+		F3BDC13E65A3A45A1C1306AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F47BD8F400EE498AA08F3A45 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		FDC90B07029CB0BA4B15AE7E /* Pods-MMDrawerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMDrawerController-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1232D16B0B7659E588E3BE9A /* Frameworks */ = {
+		3F444205320C2E25EDEA0450 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29BC8B9706852BCA72D7AB4B /* Foundation.framework in Frameworks */,
+				6418F59DA0DFF5E7D206326E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D3DD6747976FD6B8B65ABBC /* Frameworks */ = {
+		54FB27F079E89D2EDB0D6492 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF789908E1AA282AEDC2E0E /* Foundation.framework in Frameworks */,
-				4FF6B0B187B4208C52CBEB72 /* QuartzCore.framework in Frameworks */,
+				FEEDE0AB01873E7DBFA07E12 /* CoreGraphics.framework in Frameworks */,
+				83B7969F5268CD3DE90B9BEA /* Foundation.framework in Frameworks */,
+				BE0FAD4FFA6B8C0C8D6AC26E /* ImageIO.framework in Frameworks */,
+				1E6975AD8940946C78F5D375 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD9CBFC67C4BCDD663C75533 /* Frameworks */ = {
+		972B0040C3AA977F13F50200 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B84B99AF7DF7535D328922 /* Foundation.framework in Frameworks */,
+				59ED70D2694B95BD8CCDB027 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3D83212DA54D5965BD8C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3F09EAD80A2FD023166098 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33111408E9F4FEB34C0614D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF2BAA3C0BC0CD4CE7483E /* Foundation.framework in Frameworks */,
+				79BBB644F62DB4802A2C487B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18DD4C6F9BA4F67E4ACC49A9 /* Products */ = {
+		0FF5EFD82365E39CA40A3D72 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD23543EA58708754A320E38 /* libPods.a */,
-				D34D2E7A74E0B2ED5E83F6C8 /* libPods-MMDrawerController.a */,
-				5F79E8A3A1146EF383923AC5 /* libPods-MWFeedParser.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		256097AD054BEFBE01978E83 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				7EE7C394955CD8493954EEA6 /* Core */,
-				ECED654D390F10C9C9FF8013 /* MMDrawerBarButtonItem */,
-				E80A6112A101711AF1B7CD36 /* MMDrawerVisualStates */,
-				97807E708054E7268BB70032 /* Subclass */,
-				5C663354D8874EB208310E44 /* Support Files */,
-			);
-			path = MMDrawerController;
-			sourceTree = "<group>";
-		};
-		33199D21FC96A6EA72558026 /* NSString+HTML */ = {
-			isa = PBXGroup;
-			children = (
-				06F4BE538B602C6FA1E77D87 /* GTMNSString+HTML.h */,
-				CE99FC0B9B36C274CAD5DE32 /* GTMNSString+HTML.m */,
-				A7830E89D4BBD404F5A4EA10 /* NSString+HTML.h */,
-				91BB3199EB085014AC6A16C0 /* NSString+HTML.m */,
-			);
-			name = "NSString+HTML";
-			sourceTree = "<group>";
-		};
-		47B7C9A365B4B5128D1E7EB6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8F6FE1D99A3F96164570F114 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4974BEC9DFB6B239B968D99F /* FeedParser */ = {
-			isa = PBXGroup;
-			children = (
-				3128AE3E1342C55033D7B759 /* MWFeedInfo.h */,
-				8D2161B5E4DD5DDE9E9EE3FD /* MWFeedInfo.m */,
-				8BE9BFD62FBE289AAE4DFD5E /* MWFeedItem.h */,
-				2807A065E3C1039B4D5D849F /* MWFeedItem.m */,
-				A46DB6E05E5B9C7B768630A0 /* MWFeedParser.h */,
-				4373615C16CD628D2E423934 /* MWFeedParser.m */,
-				D10B392707C66F0D755A770E /* MWFeedParser_Private.h */,
-			);
-			name = FeedParser;
-			sourceTree = "<group>";
-		};
-		5C663354D8874EB208310E44 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76D4D88DCABEAD906769D0F8 /* Pods-MMDrawerController.xcconfig */,
-				FFE43B70D58680B0731F9FCA /* Pods-MMDrawerController-Private.xcconfig */,
-				F6E42A00EEFC46AF629F8812 /* Pods-MMDrawerController-dummy.m */,
-				6EBB3C3D47D37EC95CC97656 /* Pods-MMDrawerController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MMDrawerController";
-			sourceTree = "<group>";
-		};
-		5C8690B0F91AD68F93DB436D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2ACAEFA56DFBF1AE2CE1644D /* Pods-acknowledgements.markdown */,
-				0A3577EC3316325B46F16469 /* Pods-acknowledgements.plist */,
-				870325C7BE78864438472531 /* Pods-dummy.m */,
-				E273EA115E6A1F7381C779A6 /* Pods-environment.h */,
-				B27C2132788DE492A6392FDC /* Pods-resources.sh */,
-				3D5CB2EA58120FFCE1AAD09A /* Pods.debug.xcconfig */,
-				D3422E6933F8C77AD94BBFAD /* Pods.release.xcconfig */,
+				C15B25529DE0C42C7530C2AE /* Pods-acknowledgements.markdown */,
+				42B98724B9CDA4F15C110F52 /* Pods-acknowledgements.plist */,
+				A59358635840DC1B1825C214 /* Pods-dummy.m */,
+				8FFA11A555B4621E26DB644B /* Pods-environment.h */,
+				42A47F056E660BD92B987742 /* Pods-resources.sh */,
+				D03C3113CE3E5F22DD02C482 /* Pods.debug.xcconfig */,
+				7E46B857907CCDE19C0DF7E1 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		7CCD8CC43F012CC5E61D2029 /* Targets Support Files */ = {
+		245ED94891762C4F30964004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C8690B0F91AD68F93DB436D /* Pods */,
+				49F6AEAD965D375CFA0F237F /* libPods.a */,
+				541EA620CC156ED38394947A /* libPods-AnimatedGIFImageSerialization.a */,
+				C5DE657BA01102B9F7A649D0 /* libPods-MMDrawerController.a */,
+				D5E4D9D25D10B5BB098D1A5C /* libPods-MWFeedParser.a */,
+				10D7E6010039EA51BD29DD75 /* libPods-UzysAnimatedGifPullToRefresh.a */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7EE7C394955CD8493954EEA6 /* Core */ = {
+		2B008D2C6CBEEF21009183EC /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A4A8BEBA1665505C6198A /* MMDrawerController.h */,
-				47FB1E9994712CC2307DEC44 /* MMDrawerController.m */,
-				8673B054C3270C89BDC3347E /* MMDrawerController+Subclass.h */,
-				72CD20B71457FF00B4FCABA6 /* UIViewController+MMDrawerController.h */,
-				A148E079707630E0FB8172E8 /* UIViewController+MMDrawerController.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		82E69F61C283D8402BCB42A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F341A846D056BE4B17B60D6E /* Pods-MWFeedParser.xcconfig */,
-				DC0A02BB349D12BE3D80D9CD /* Pods-MWFeedParser-Private.xcconfig */,
-				59ADA2D3C36361DF4A18CFE7 /* Pods-MWFeedParser-dummy.m */,
-				601C935DFB5C38BC8B5DF29A /* Pods-MWFeedParser-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MWFeedParser";
-			sourceTree = "<group>";
-		};
-		8F6FE1D99A3F96164570F114 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				66FBAC4B4BE2CA09682A6065 /* Foundation.framework */,
-				AA0E68C13F506D8C7E0AEDC4 /* QuartzCore.framework */,
+				F3BDC13E65A3A45A1C1306AC /* CoreGraphics.framework */,
+				205651A28855D94D1BA9B177 /* Foundation.framework */,
+				87CBC3A4BB52F41BACA78E0C /* ImageIO.framework */,
+				B35D13BDB223622D4C627991 /* MobileCoreServices.framework */,
+				4A9EBD2A149F3091E0E5882A /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		97807E708054E7268BB70032 /* Subclass */ = {
+		3DD81743BC4CA9C9D58C9071 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2676390C4DD8D15531C34AD0 /* Pods-AnimatedGIFImageSerialization.xcconfig */,
+				BD388D4F958828DE2ED81FEF /* Pods-AnimatedGIFImageSerialization-Private.xcconfig */,
+				5210A85B4637CB1223FBFC73 /* Pods-AnimatedGIFImageSerialization-dummy.m */,
+				42BF549913473D8C40DFCDB8 /* Pods-AnimatedGIFImageSerialization-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AnimatedGIFImageSerialization";
+			sourceTree = "<group>";
+		};
+		3F8AE67C42E444EF60DEBFB6 /* NSDate+InternetDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				0330DB19B41714D96C37FA6E /* NSDate+InternetDateTime.h */,
+				74CD7DA98625EDFE453F851D /* NSDate+InternetDateTime.m */,
+			);
+			name = "NSDate+InternetDateTime";
+			sourceTree = "<group>";
+		};
+		480A63D1C29E5D26D5E8E928 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				666A6D28801884692087D196 /* MMDrawerController.h */,
+				D36B5732CF5604E1DF17134D /* MMDrawerController.m */,
+				8639FC311B92F04757A415C8 /* MMDrawerController+Subclass.h */,
+				20D540546B1A8C9743EEE23E /* UIViewController+MMDrawerController.h */,
+				F47BD8F400EE498AA08F3A45 /* UIViewController+MMDrawerController.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5AC3FFAE55A00A648C838631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B008D2C6CBEEF21009183EC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		615A776BCB568F589A5A827A /* MMDrawerBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				D91BF830DAF0B1513B07C0AA /* MMDrawerBarButtonItem.h */,
+				D7C508F455786F480165FD00 /* MMDrawerBarButtonItem.m */,
+			);
+			name = MMDrawerBarButtonItem;
+			sourceTree = "<group>";
+		};
+		67B164C3B05CD242D3AE599D /* UzysAnimatedGifPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				6BD54060E07CD5821D536E6B /* UIScrollView+UzysAnimatedGifPullToRefresh.h */,
+				7DEEBAE3CD1745AFF1AB2CF0 /* UIScrollView+UzysAnimatedGifPullToRefresh.m */,
+				F33217641AC863EC653FCF91 /* UzysAnimatedGifActivityIndicator.h */,
+				1AAC35A7643EFB6D4BF02635 /* UzysAnimatedGifActivityIndicator.m */,
+				B25AEE99A38B621947C62EC0 /* UzysAnimatedGifPullToRefreshConfiguration.h */,
+				E7A4FB547168652F51D681E1 /* Support Files */,
+			);
+			path = UzysAnimatedGifPullToRefresh;
+			sourceTree = "<group>";
+		};
+		6BA6379689BA86B17CDC4974 /* Subclass */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Subclass;
 			sourceTree = "<group>";
 		};
-		B15455B69DAA915815AC4F55 = {
+		70C58320877F5944FC931A61 = {
 			isa = PBXGroup;
 			children = (
-				F5F9485FF2F1E41E61772970 /* Podfile */,
-				47B7C9A365B4B5128D1E7EB6 /* Frameworks */,
-				C0414454C46AB1F00BD451A0 /* Pods */,
-				18DD4C6F9BA4F67E4ACC49A9 /* Products */,
-				7CCD8CC43F012CC5E61D2029 /* Targets Support Files */,
+				7BD7691419E770A0DC2E8682 /* Podfile */,
+				5AC3FFAE55A00A648C838631 /* Frameworks */,
+				9CFD26DBBD112DA313E4ABF3 /* Pods */,
+				245ED94891762C4F30964004 /* Products */,
+				C03BCC55120F79E45736E157 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BF06E9C09830A22A21901A0F /* NSDate+InternetDateTime */ = {
+		717637597AFCB507C937D000 /* MMDrawerController */ = {
 			isa = PBXGroup;
 			children = (
-				17F9483B45895A7A857CD813 /* NSDate+InternetDateTime.h */,
-				F6835FAF58ACF014E01FB98D /* NSDate+InternetDateTime.m */,
+				480A63D1C29E5D26D5E8E928 /* Core */,
+				615A776BCB568F589A5A827A /* MMDrawerBarButtonItem */,
+				A0699D0827CFB18A3F761F25 /* MMDrawerVisualStates */,
+				6BA6379689BA86B17CDC4974 /* Subclass */,
+				D505ED2A0ABEF6F96FC378E1 /* Support Files */,
 			);
-			name = "NSDate+InternetDateTime";
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
-		C0414454C46AB1F00BD451A0 /* Pods */ = {
+		755B2070F623DD9707D1C58B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				256097AD054BEFBE01978E83 /* MMDrawerController */,
-				C280C1502D0F25174B085126 /* MWFeedParser */,
+				59C8AC24ADAF6B90FEEE4916 /* Pods-MWFeedParser.xcconfig */,
+				85C87EC23185199531CDDE6A /* Pods-MWFeedParser-Private.xcconfig */,
+				B991CDACCDB72A8490624B77 /* Pods-MWFeedParser-dummy.m */,
+				36C10725621338C8A6EB0040 /* Pods-MWFeedParser-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MWFeedParser";
 			sourceTree = "<group>";
 		};
-		C280C1502D0F25174B085126 /* MWFeedParser */ = {
+		9665C39756A73A6B20B1744D /* MWFeedParser */ = {
 			isa = PBXGroup;
 			children = (
-				4974BEC9DFB6B239B968D99F /* FeedParser */,
-				BF06E9C09830A22A21901A0F /* NSDate+InternetDateTime */,
-				33199D21FC96A6EA72558026 /* NSString+HTML */,
-				82E69F61C283D8402BCB42A8 /* Support Files */,
+				E0EBEDC36836F823756A3C9A /* FeedParser */,
+				3F8AE67C42E444EF60DEBFB6 /* NSDate+InternetDateTime */,
+				C8EFFDC0D84DB9B0E69CC8F0 /* NSString+HTML */,
+				755B2070F623DD9707D1C58B /* Support Files */,
 			);
 			path = MWFeedParser;
 			sourceTree = "<group>";
 		};
-		E80A6112A101711AF1B7CD36 /* MMDrawerVisualStates */ = {
+		9CFD26DBBD112DA313E4ABF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E19D1C5A579BD9F3BF417DBD /* MMDrawerVisualState.h */,
-				A683A41675F226FBC48E98E9 /* MMDrawerVisualState.m */,
+				E904F29B8297313B9DFA0FA7 /* AnimatedGIFImageSerialization */,
+				717637597AFCB507C937D000 /* MMDrawerController */,
+				9665C39756A73A6B20B1744D /* MWFeedParser */,
+				67B164C3B05CD242D3AE599D /* UzysAnimatedGifPullToRefresh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0699D0827CFB18A3F761F25 /* MMDrawerVisualStates */ = {
+			isa = PBXGroup;
+			children = (
+				5AFBEF2D4868C1E200623F99 /* MMDrawerVisualState.h */,
+				48D574E27AB0EEE88C0D7D07 /* MMDrawerVisualState.m */,
 			);
 			name = MMDrawerVisualStates;
 			sourceTree = "<group>";
 		};
-		ECED654D390F10C9C9FF8013 /* MMDrawerBarButtonItem */ = {
+		C03BCC55120F79E45736E157 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE7F08F0BCBA1D62308AF3D9 /* MMDrawerBarButtonItem.h */,
-				A057CA315C7BB50E40B2FA52 /* MMDrawerBarButtonItem.m */,
+				0FF5EFD82365E39CA40A3D72 /* Pods */,
 			);
-			name = MMDrawerBarButtonItem;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C8EFFDC0D84DB9B0E69CC8F0 /* NSString+HTML */ = {
+			isa = PBXGroup;
+			children = (
+				462BE544AC3871695ED3737C /* GTMNSString+HTML.h */,
+				A6C1AC7291C9606E87EFAF9D /* GTMNSString+HTML.m */,
+				DA7043B4159F49232524FCB8 /* NSString+HTML.h */,
+				6CDEB6131B3694FA82759D46 /* NSString+HTML.m */,
+			);
+			name = "NSString+HTML";
+			sourceTree = "<group>";
+		};
+		D505ED2A0ABEF6F96FC378E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7894188DE208DE5CC907BDA9 /* Pods-MMDrawerController.xcconfig */,
+				FDC90B07029CB0BA4B15AE7E /* Pods-MMDrawerController-Private.xcconfig */,
+				4F8E6836BD762E47F3D24098 /* Pods-MMDrawerController-dummy.m */,
+				7DA96D51E92FFBABAA6D6C25 /* Pods-MMDrawerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MMDrawerController";
+			sourceTree = "<group>";
+		};
+		E0EBEDC36836F823756A3C9A /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				5FCFFF0A8DB095DFBBE6F119 /* MWFeedInfo.h */,
+				48BF10E6B7E212CE5F4FCB83 /* MWFeedInfo.m */,
+				6213A9C9D0AE615F74C912AF /* MWFeedItem.h */,
+				3E79377E7509467D546D2061 /* MWFeedItem.m */,
+				5BCF58B0AECFD4869F8C5ACD /* MWFeedParser.h */,
+				F27DA9E526B92C007C49598C /* MWFeedParser.m */,
+				B0A2B4567AEEDF7ABDB7DC31 /* MWFeedParser_Private.h */,
+			);
+			name = FeedParser;
+			sourceTree = "<group>";
+		};
+		E7A4FB547168652F51D681E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08E670526EFBB9C320FCEC6E /* Pods-UzysAnimatedGifPullToRefresh.xcconfig */,
+				EBBDDE5C45880AA33264735E /* Pods-UzysAnimatedGifPullToRefresh-Private.xcconfig */,
+				A18BEFC98EB0E04CF1E91080 /* Pods-UzysAnimatedGifPullToRefresh-dummy.m */,
+				A50CDBCEDEB8223EF4A1BCEE /* Pods-UzysAnimatedGifPullToRefresh-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-UzysAnimatedGifPullToRefresh";
+			sourceTree = "<group>";
+		};
+		E904F29B8297313B9DFA0FA7 /* AnimatedGIFImageSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				25647AE2476A9D07C1E6F420 /* AnimatedGIFImageSerialization.h */,
+				2950E8A1C1E0E9A86E323DB5 /* AnimatedGIFImageSerialization.m */,
+				3DD81743BC4CA9C9D58C9071 /* Support Files */,
+			);
+			path = AnimatedGIFImageSerialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A938C2DE5782E1EB01479F6 /* Headers */ = {
+		0F9E01A1879C9652307D9D95 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4AE312A1FE47DC9ED79153 /* MMDrawerBarButtonItem.h in Headers */,
-				FD52428B488E3413EF149770 /* MMDrawerController+Subclass.h in Headers */,
-				7A6F975743D7240494C89BEB /* MMDrawerController+Subclass.h in Headers */,
-				815B17BE86978B2CCE8D2BC0 /* MMDrawerController.h in Headers */,
-				8DCB4979A94F4611860BA0F7 /* MMDrawerVisualState.h in Headers */,
-				90D2D44817DB940B30D45949 /* UIViewController+MMDrawerController.h in Headers */,
+				DA5C2075956DD982C03ABBFC /* MMDrawerBarButtonItem.h in Headers */,
+				3CC098EA07E6575B0AE2DE7F /* MMDrawerController+Subclass.h in Headers */,
+				7A5A949DF39CD622EC3EADA5 /* MMDrawerController+Subclass.h in Headers */,
+				8AEA6D6AD97E5461C91F2038 /* MMDrawerController.h in Headers */,
+				21E6C29F7B4CA9AC762C237D /* MMDrawerVisualState.h in Headers */,
+				FE928234CB0737B1AD92B16E /* UIViewController+MMDrawerController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DB9D306394F67F7BB8BBCC9 /* Headers */ = {
+		1DDCD12F40375C4DD6858EC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E07E253A12FBA2F41C4B832 /* GTMNSString+HTML.h in Headers */,
-				F98679FE933D759555CA11E5 /* MWFeedInfo.h in Headers */,
-				824E9912CDF4F04CBB701F9A /* MWFeedItem.h in Headers */,
-				20BEF7C6C1B4F7A75F9EB8BE /* MWFeedParser.h in Headers */,
-				27B2908B0989BE21715474B2 /* MWFeedParser_Private.h in Headers */,
-				1FCD26F96602E6A2ACB08501 /* NSDate+InternetDateTime.h in Headers */,
-				EA0E0C2DAA557A206A921B3A /* NSString+HTML.h in Headers */,
+				9E01C3D64C01BD19810D6913 /* UIScrollView+UzysAnimatedGifPullToRefresh.h in Headers */,
+				5DB60AB49CF44B24387ECF94 /* UzysAnimatedGifActivityIndicator.h in Headers */,
+				04F427E2D5BBA631644086DF /* UzysAnimatedGifPullToRefreshConfiguration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64341E06E229C75E2E9AFBE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8495B6EE2D433C22D9816470 /* GTMNSString+HTML.h in Headers */,
+				6A4FC2560A92D5596ED732F5 /* MWFeedInfo.h in Headers */,
+				6A286769EFAD5D3A0DABE43A /* MWFeedItem.h in Headers */,
+				B4709F4684BA98CC69FBF3AB /* MWFeedParser.h in Headers */,
+				76503C5D5DAD0781D9B91B55 /* MWFeedParser_Private.h in Headers */,
+				5118E82FAEB7D1DFE13B744D /* NSDate+InternetDateTime.h in Headers */,
+				CEC4AA542A34D7A00F670E3E /* NSString+HTML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BF3C4519D2470246626B00C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8A5CAB9F6DB65DED4305854 /* AnimatedGIFImageSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		53F7BB36C3AB2EC28BE081FD /* Pods */ = {
+		35D6270EE231C1585B36F7F8 /* Pods-AnimatedGIFImageSerialization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 697C14481E4047F43B4D1133 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 82FDFA7AFD626BE15552EF7D /* Build configuration list for PBXNativeTarget "Pods-AnimatedGIFImageSerialization" */;
 			buildPhases = (
-				122AEEBC8A30397F0F0D2C5F /* Sources */,
-				1232D16B0B7659E588E3BE9A /* Frameworks */,
+				F561417F379A64119B66F6E6 /* Sources */,
+				54FB27F079E89D2EDB0D6492 /* Frameworks */,
+				9BF3C4519D2470246626B00C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0D1DC235508D762A3555AFD1 /* PBXTargetDependency */,
-				E85A3720546696EA63558539 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimatedGIFImageSerialization";
+			productName = "Pods-AnimatedGIFImageSerialization";
+			productReference = 541EA620CC156ED38394947A /* libPods-AnimatedGIFImageSerialization.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		69962E93A941871F31602848 /* Pods-UzysAnimatedGifPullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6AB9BDF7AE7C58AAE40D6CE /* Build configuration list for PBXNativeTarget "Pods-UzysAnimatedGifPullToRefresh" */;
+			buildPhases = (
+				DA261DF6F4792DFE4399EBA9 /* Sources */,
+				A7E3D83212DA54D5965BD8C7 /* Frameworks */,
+				1DDCD12F40375C4DD6858EC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19BAE0F645259EC61C67D707 /* PBXTargetDependency */,
+			);
+			name = "Pods-UzysAnimatedGifPullToRefresh";
+			productName = "Pods-UzysAnimatedGifPullToRefresh";
+			productReference = 10D7E6010039EA51BD29DD75 /* libPods-UzysAnimatedGifPullToRefresh.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6CB895D4811853CD198B8D31 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C23DB265A3AF402C291E42 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				3F1983954F1F8D4AACFE1544 /* Sources */,
+				3F444205320C2E25EDEA0450 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				146DAEBCA8291F395D0C7240 /* PBXTargetDependency */,
+				87BB26542DCC977FB1B1060F /* PBXTargetDependency */,
+				7953A3957C70CA6F1FFF1D93 /* PBXTargetDependency */,
+				1C344710EDAA959AD1B59E84 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = BD23543EA58708754A320E38 /* libPods.a */;
+			productReference = 49F6AEAD965D375CFA0F237F /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		701852ED3EFEF67A27E22141 /* Pods-MWFeedParser */ = {
+		A7E9F15DAF625B96AB909788 /* Pods-MWFeedParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F078CED46A77D2AAB18C810 /* Build configuration list for PBXNativeTarget "Pods-MWFeedParser" */;
+			buildConfigurationList = AFDA9817F8ABB8C0C12A8AD9 /* Build configuration list for PBXNativeTarget "Pods-MWFeedParser" */;
 			buildPhases = (
-				D51EAE7EFFE26E77F7376E9A /* Sources */,
-				CD9CBFC67C4BCDD663C75533 /* Frameworks */,
-				3DB9D306394F67F7BB8BBCC9 /* Headers */,
+				1CD8FBAC4FC551A3E63D6C4C /* Sources */,
+				972B0040C3AA977F13F50200 /* Frameworks */,
+				64341E06E229C75E2E9AFBE3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -384,16 +567,16 @@
 			);
 			name = "Pods-MWFeedParser";
 			productName = "Pods-MWFeedParser";
-			productReference = 5F79E8A3A1146EF383923AC5 /* libPods-MWFeedParser.a */;
+			productReference = D5E4D9D25D10B5BB098D1A5C /* libPods-MWFeedParser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A71CA51E3B08DCC3A438600B /* Pods-MMDrawerController */ = {
+		E9513DB31191A9270F858B19 /* Pods-MMDrawerController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31A036FEA9EBEA7EDDC4D138 /* Build configuration list for PBXNativeTarget "Pods-MMDrawerController" */;
+			buildConfigurationList = D57B9F67467668661E8CEAA5 /* Build configuration list for PBXNativeTarget "Pods-MMDrawerController" */;
 			buildPhases = (
-				94289E9B07EFEB36F5E9DACA /* Sources */,
-				6D3DD6747976FD6B8B65ABBC /* Frameworks */,
-				3A938C2DE5782E1EB01479F6 /* Headers */,
+				545922EF8D176FCFDE1770F6 /* Sources */,
+				E33111408E9F4FEB34C0614D /* Frameworks */,
+				0F9E01A1879C9652307D9D95 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -401,108 +584,131 @@
 			);
 			name = "Pods-MMDrawerController";
 			productName = "Pods-MMDrawerController";
-			productReference = D34D2E7A74E0B2ED5E83F6C8 /* libPods-MMDrawerController.a */;
+			productReference = C5DE657BA01102B9F7A649D0 /* libPods-MMDrawerController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		13030F693221A3CE0C173AE6 /* Project object */ = {
+		D2E8D54508DE26B27C52CCCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 621BF3B272D9351DFA86D445 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 302C0D72CA974A67557ABD47 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B15455B69DAA915815AC4F55;
-			productRefGroup = 18DD4C6F9BA4F67E4ACC49A9 /* Products */;
+			mainGroup = 70C58320877F5944FC931A61;
+			productRefGroup = 245ED94891762C4F30964004 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53F7BB36C3AB2EC28BE081FD /* Pods */,
-				A71CA51E3B08DCC3A438600B /* Pods-MMDrawerController */,
-				701852ED3EFEF67A27E22141 /* Pods-MWFeedParser */,
+				6CB895D4811853CD198B8D31 /* Pods */,
+				35D6270EE231C1585B36F7F8 /* Pods-AnimatedGIFImageSerialization */,
+				E9513DB31191A9270F858B19 /* Pods-MMDrawerController */,
+				A7E9F15DAF625B96AB909788 /* Pods-MWFeedParser */,
+				69962E93A941871F31602848 /* Pods-UzysAnimatedGifPullToRefresh */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		122AEEBC8A30397F0F0D2C5F /* Sources */ = {
+		1CD8FBAC4FC551A3E63D6C4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22FA955E073261BB90ABF7C /* Pods-dummy.m in Sources */,
+				4AEC3016FBF878748901683A /* GTMNSString+HTML.m in Sources */,
+				294DE7D33943A0FB25451CA5 /* MWFeedInfo.m in Sources */,
+				454C22E3CB73B9E3B730E6AE /* MWFeedItem.m in Sources */,
+				3858EC58A6D31DB44AE509BE /* MWFeedParser.m in Sources */,
+				E3917DF5460D69CE1F6C3537 /* NSDate+InternetDateTime.m in Sources */,
+				68F2CF62DA80FEC1CC1AE46C /* NSString+HTML.m in Sources */,
+				1D8D8345A6EAA51D8BD1FE21 /* Pods-MWFeedParser-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94289E9B07EFEB36F5E9DACA /* Sources */ = {
+		3F1983954F1F8D4AACFE1544 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0702B0744287CEB8D31B7B81 /* MMDrawerBarButtonItem.m in Sources */,
-				2D6861FD991D261C3FE4BB60 /* MMDrawerController.m in Sources */,
-				9B59BA5F16AECDAF71D73FEF /* MMDrawerVisualState.m in Sources */,
-				F50AFE5BEEEDC9D1B9AE2034 /* Pods-MMDrawerController-dummy.m in Sources */,
-				C9EE048A3950996B084A4BB4 /* UIViewController+MMDrawerController.m in Sources */,
+				533DE2896897344B67C5AE4D /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D51EAE7EFFE26E77F7376E9A /* Sources */ = {
+		545922EF8D176FCFDE1770F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AB9190E81A038AC131F4AC6 /* GTMNSString+HTML.m in Sources */,
-				D29D13E2EFAE42A26EF82990 /* MWFeedInfo.m in Sources */,
-				4968514C0A2F1BAD080AF60F /* MWFeedItem.m in Sources */,
-				F1B28394FB89C06A2F47345B /* MWFeedParser.m in Sources */,
-				3B5EBE8D8E48CBBDCAF126F5 /* NSDate+InternetDateTime.m in Sources */,
-				D4588DA073C6B1A5674B3094 /* NSString+HTML.m in Sources */,
-				270CDE2D84C7F757AC4BEBEF /* Pods-MWFeedParser-dummy.m in Sources */,
+				0D500C5D64284EAD611F6C7D /* MMDrawerBarButtonItem.m in Sources */,
+				51633EA6695AD49631EBC605 /* MMDrawerController.m in Sources */,
+				21E4893CE83C9A50A310F261 /* MMDrawerVisualState.m in Sources */,
+				651DAECDBEC66670A1D77DAE /* Pods-MMDrawerController-dummy.m in Sources */,
+				A6138BA092D9EC73D0151585 /* UIViewController+MMDrawerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA261DF6F4792DFE4399EBA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D44988125FE45F04B85EF94 /* Pods-UzysAnimatedGifPullToRefresh-dummy.m in Sources */,
+				EC5CAD564FED2A54B8375C26 /* UIScrollView+UzysAnimatedGifPullToRefresh.m in Sources */,
+				BDA38DEBBBB8E1142D2268E2 /* UzysAnimatedGifActivityIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F561417F379A64119B66F6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6475104B7F774C589607E1C7 /* AnimatedGIFImageSerialization.m in Sources */,
+				DCF853565592BE00AAAE4BD1 /* Pods-AnimatedGIFImageSerialization-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D1DC235508D762A3555AFD1 /* PBXTargetDependency */ = {
+		146DAEBCA8291F395D0C7240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-MMDrawerController";
-			target = A71CA51E3B08DCC3A438600B /* Pods-MMDrawerController */;
-			targetProxy = 7E490C4218E05E4C16348BC3 /* PBXContainerItemProxy */;
+			name = "Pods-AnimatedGIFImageSerialization";
+			target = 35D6270EE231C1585B36F7F8 /* Pods-AnimatedGIFImageSerialization */;
+			targetProxy = A0ED6143CB5D12DC755C8D96 /* PBXContainerItemProxy */;
 		};
-		E85A3720546696EA63558539 /* PBXTargetDependency */ = {
+		19BAE0F645259EC61C67D707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnimatedGIFImageSerialization";
+			target = 35D6270EE231C1585B36F7F8 /* Pods-AnimatedGIFImageSerialization */;
+			targetProxy = E215B5F9E86B3E780EF5758F /* PBXContainerItemProxy */;
+		};
+		1C344710EDAA959AD1B59E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UzysAnimatedGifPullToRefresh";
+			target = 69962E93A941871F31602848 /* Pods-UzysAnimatedGifPullToRefresh */;
+			targetProxy = C353C6C7DBECB11EF8408E09 /* PBXContainerItemProxy */;
+		};
+		7953A3957C70CA6F1FFF1D93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MWFeedParser";
-			target = 701852ED3EFEF67A27E22141 /* Pods-MWFeedParser */;
-			targetProxy = F7E013E0417CE544C74BB0B1 /* PBXContainerItemProxy */;
+			target = A7E9F15DAF625B96AB909788 /* Pods-MWFeedParser */;
+			targetProxy = DEA4973C3A064562E7F6F7EF /* PBXContainerItemProxy */;
+		};
+		87BB26542DCC977FB1B1060F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MMDrawerController";
+			target = E9513DB31191A9270F858B19 /* Pods-MMDrawerController */;
+			targetProxy = B6060A9A06FB5E552FED70D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3371F509603C9EF537BED656 /* Debug */ = {
+		0A882E72572B780B8FB929B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D5CB2EA58120FFCE1AAD09A /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4203BFFB34236840135AC86F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC0A02BB349D12BE3D80D9CD /* Pods-MWFeedParser-Private.xcconfig */;
+			baseConfigurationReference = 85C87EC23185199531CDDE6A /* Pods-MWFeedParser-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MWFeedParser/Pods-MWFeedParser-prefix.pch";
@@ -516,7 +722,7 @@
 			};
 			name = Debug;
 		};
-		48A0CC7A22A2CC1F59362147 /* Debug */ = {
+		0F7D2A7F2D0BC1F0A711B102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -555,12 +761,12 @@
 			};
 			name = Debug;
 		};
-		56D456B5A3B82DB386270C8D /* Release */ = {
+		15B152A166C65F6CC2F4D5A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFE43B70D58680B0731F9FCA /* Pods-MMDrawerController-Private.xcconfig */;
+			baseConfigurationReference = BD388D4F958828DE2ED81FEF /* Pods-AnimatedGIFImageSerialization-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMDrawerController/Pods-MMDrawerController-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFImageSerialization-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -571,7 +777,7 @@
 			};
 			name = Release;
 		};
-		580AB9F7C89DED116EDA6588 /* Release */ = {
+		1C30D78B1910AE989318886E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -605,25 +811,9 @@
 			};
 			name = Release;
 		};
-		85FE1C2E98B6A25591EC6424 /* Debug */ = {
+		5BBF59C6F5743757179764CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFE43B70D58680B0731F9FCA /* Pods-MMDrawerController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMDrawerController/Pods-MMDrawerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B8EBD2F2C99FE301E210DE81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3422E6933F8C77AD94BBFAD /* Pods.release.xcconfig */;
+			baseConfigurationReference = 7E46B857907CCDE19C0DF7E1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -637,9 +827,57 @@
 			};
 			name = Release;
 		};
-		F28EDFE1656F40C3FD1C27E6 /* Release */ = {
+		642E45A93C2B4D1E98033541 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC0A02BB349D12BE3D80D9CD /* Pods-MWFeedParser-Private.xcconfig */;
+			baseConfigurationReference = EBBDDE5C45880AA33264735E /* Pods-UzysAnimatedGifPullToRefresh-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UzysAnimatedGifPullToRefresh/Pods-UzysAnimatedGifPullToRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6E0D0AD4F73E95C1E121B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC90B07029CB0BA4B15AE7E /* Pods-MMDrawerController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMDrawerController/Pods-MMDrawerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		72D1ACCCB0B8970080E74CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBDDE5C45880AA33264735E /* Pods-UzysAnimatedGifPullToRefresh-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UzysAnimatedGifPullToRefresh/Pods-UzysAnimatedGifPullToRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		850E6E8EF413B9374E1E9C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C87EC23185199531CDDE6A /* Pods-MWFeedParser-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MWFeedParser/Pods-MWFeedParser-prefix.pch";
@@ -653,46 +891,112 @@
 			};
 			name = Release;
 		};
+		B00774F3DAB2D60D173D0EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD388D4F958828DE2ED81FEF /* Pods-AnimatedGIFImageSerialization-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFImageSerialization-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B7FB72B95B90434849D47B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC90B07029CB0BA4B15AE7E /* Pods-MMDrawerController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMDrawerController/Pods-MMDrawerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE8B93C7E46FA331C64E160F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03C3113CE3E5F22DD02C482 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31A036FEA9EBEA7EDDC4D138 /* Build configuration list for PBXNativeTarget "Pods-MMDrawerController" */ = {
+		302C0D72CA974A67557ABD47 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				85FE1C2E98B6A25591EC6424 /* Debug */,
-				56D456B5A3B82DB386270C8D /* Release */,
+				0F7D2A7F2D0BC1F0A711B102 /* Debug */,
+				1C30D78B1910AE989318886E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		621BF3B272D9351DFA86D445 /* Build configuration list for PBXProject "Pods" */ = {
+		82FDFA7AFD626BE15552EF7D /* Build configuration list for PBXNativeTarget "Pods-AnimatedGIFImageSerialization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48A0CC7A22A2CC1F59362147 /* Debug */,
-				580AB9F7C89DED116EDA6588 /* Release */,
+				B00774F3DAB2D60D173D0EBD /* Debug */,
+				15B152A166C65F6CC2F4D5A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		697C14481E4047F43B4D1133 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		AFDA9817F8ABB8C0C12A8AD9 /* Build configuration list for PBXNativeTarget "Pods-MWFeedParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3371F509603C9EF537BED656 /* Debug */,
-				B8EBD2F2C99FE301E210DE81 /* Release */,
+				0A882E72572B780B8FB929B9 /* Debug */,
+				850E6E8EF413B9374E1E9C1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F078CED46A77D2AAB18C810 /* Build configuration list for PBXNativeTarget "Pods-MWFeedParser" */ = {
+		B5C23DB265A3AF402C291E42 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4203BFFB34236840135AC86F /* Debug */,
-				F28EDFE1656F40C3FD1C27E6 /* Release */,
+				FE8B93C7E46FA331C64E160F /* Debug */,
+				5BBF59C6F5743757179764CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D57B9F67467668661E8CEAA5 /* Build configuration list for PBXNativeTarget "Pods-MMDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FB72B95B90434849D47B2B /* Debug */,
+				6E0D0AD4F73E95C1E121B59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6AB9BDF7AE7C58AAE40D6CE /* Build configuration list for PBXNativeTarget "Pods-UzysAnimatedGifPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642E45A93C2B4D1E98033541 /* Debug */,
+				72D1ACCCB0B8970080E74CF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 13030F693221A3CE0C173AE6 /* Project object */;
+	rootObject = D2E8D54508DE26B27C52CCCF /* Project object */;
 }

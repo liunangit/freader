@@ -2,7 +2,7 @@
 //  FRFeedParser.m
 //  FReader
 //
-//  Created by honey.vi on 15/3/15.
+//  Created by itedliu@qq.com on 15/3/15.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
@@ -80,15 +80,15 @@
 - (void)feedParserDidFinish:(MWFeedParser *)parser {
     NSLog(@"Finished Parsing%@", (parser.stopped ? @" (Stopped)" : @""));
     self.feedModel.feedModelList = self.feedArray;
-    if ([self.delegate respondsToSelector:@selector(feedParserFinish:)]) {
-        [self.delegate feedParserFinish:self.feedModel];
+    if ([self.delegate respondsToSelector:@selector(feedParserFinish:parser:)]) {
+        [self.delegate feedParserFinish:self.feedModel parser:self];
     }
 }
 
 - (void)feedParser:(MWFeedParser *)parser didFailWithError:(NSError *)error {
     NSLog(@"Finished Parsing With Error: %@", error);
-    if ([self.delegate respondsToSelector:@selector(feedParserFailed:error:)]) {
-        [self.delegate feedParserFailed:self.url error:error];
+    if ([self.delegate respondsToSelector:@selector(feedParserFailed:url:error:)]) {
+        [self.delegate feedParserFailed:self url:self.url error:error];
     }
 }
 
