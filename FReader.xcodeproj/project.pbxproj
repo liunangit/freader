@@ -20,6 +20,7 @@
 		59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385581AB4311600D43FB5 /* AppDelegate.m */; };
 		59D385611AB4311600D43FB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D385601AB4311600D43FB5 /* Images.xcassets */; };
 		59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D385621AB4311600D43FB5 /* LaunchScreen.xib */; };
+		59E04AEA1AED1D7A0057D34C /* FRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E04AE91AED1D7A0057D34C /* FRUtils.m */; };
 		B205CF491AB90EA000533E67 /* FRFeedDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF481AB90EA000533E67 /* FRFeedDetailController.m */; };
 		B205CF791AB998DE00533E67 /* FRPullRefreshBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */; };
 		B205CF801AB99B0800533E67 /* cupido@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7B1AB99B0800533E67 /* cupido@2x.gif */; };
@@ -58,6 +59,8 @@
 		59D385581AB4311600D43FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59D385601AB4311600D43FB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59D385631AB4311600D43FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		59E04AE81AED1D7A0057D34C /* FRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUtils.h; sourceTree = "<group>"; };
+		59E04AE91AED1D7A0057D34C /* FRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUtils.m; sourceTree = "<group>"; };
 		94161152B01378CFDD761650 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B205CF471AB90EA000533E67 /* FRFeedDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedDetailController.h; sourceTree = "<group>"; };
 		B205CF481AB90EA000533E67 /* FRFeedDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedDetailController.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				5950296F1AB52D5C00DE16C2 /* FRFeedManager.m */,
 				595029711AB534DD00DE16C2 /* FRFeedParser.h */,
 				595029721AB534DD00DE16C2 /* FRFeedParser.m */,
+				59E04AE81AED1D7A0057D34C /* FRUtils.h */,
+				59E04AE91AED1D7A0057D34C /* FRUtils.m */,
 				59D385601AB4311600D43FB5 /* Images.xcassets */,
 				59D385621AB4311600D43FB5 /* LaunchScreen.xib */,
 				59D385531AB4311600D43FB5 /* Supporting Files */,
@@ -296,6 +301,7 @@
 				595029701AB52D5C00DE16C2 /* FRFeedManager.m in Sources */,
 				5950296D1AB525FF00DE16C2 /* FRFeedModel.m in Sources */,
 				595029601AB43D8E00DE16C2 /* FRFeedController.m in Sources */,
+				59E04AEA1AED1D7A0057D34C /* FRUtils.m in Sources */,
 				5950295D1AB43CC100DE16C2 /* FRSubscriptionController.m in Sources */,
 				59D385561AB4311600D43FB5 /* main.m in Sources */,
 				5950296A1AB5258700DE16C2 /* FRFeedInfoModel.m in Sources */,

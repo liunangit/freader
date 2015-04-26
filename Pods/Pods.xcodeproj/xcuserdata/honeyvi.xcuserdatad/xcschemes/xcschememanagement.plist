@@ -4,25 +4,56 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AnimatedGIFImageSerialization.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-MWFeedParser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-UzysAnimatedGifPullToRefresh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>35D6270EE231C1585B36F7F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53F7BB36C3AB2EC28BE081FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69962E93A941871F31602848</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CB895D4811853CD198B8D31</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +64,16 @@
 			<true/>
 		</dict>
 		<key>A71CA51E3B08DCC3A438600B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7E9F15DAF625B96AB909788</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9513DB31191A9270F858B19</key>
 		<dict>
 			<key>primary</key>
 			<true/>

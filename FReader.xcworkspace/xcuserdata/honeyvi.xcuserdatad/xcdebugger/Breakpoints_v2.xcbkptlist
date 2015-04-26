@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FReader/FRFeedParser.m"
-            timestampString = "448124019.681511"
+            filePath = "FReader/FRFeedDetailController.m"
+            timestampString = "451736012.951941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-feedParser:didParseFeedInfo:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FReader/FRFeedManager.m"
-            timestampString = "448124400.993215"
+            filePath = "FReader/FRFeedParser.m"
+            timestampString = "451748165.262362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-feedParserFinish:"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-feedParser:didParseFeedItem:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FReader/FRFeedModel.m"
+            timestampString = "451751067.848113"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-parse"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2D1EF1D3-1AE2-47AE-94CD-53BE5DF0684B</string>
+	<string>DE7A683D-DED0-4096-A216-88090DFCF97F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FReader</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2F9C5330B3282A60DBFC674FF2EC9C376D8AA7DB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>freader</string>
+			<string>FReader</string>
 		</dict>
 	</array>
 </dict>
