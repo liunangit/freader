@@ -4,33 +4,13 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            filePath = "Pods/MMDrawerController/MMDrawerController/MMDrawerController.m"
-            timestampString = "450068544.372325"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1306"
-            endingLineNumber = "1306"
-            landmarkName = "-gestureRecognizer:shouldReceiveTouch:"
-            landmarkType = "5">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po gestureRecognizer">
-                  </ActionContent>
-               </BreakpointActionProxy>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po (BOOL)((self.openDrawerGestureModeMask &amp; possibleOpenGestureModes)&gt;0)">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -39,13 +19,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/MMDrawerController/MMDrawerController/MMDrawerController.m"
-            timestampString = "450070149.985306"
+            filePath = "FReader/FRFeedController.m"
+            timestampString = "448373412.535819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1022"
-            endingLineNumber = "1022"
-            landmarkName = "-panGestureCallback:"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-onReceiveFeeds:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FReader/FRFeedParser.m"
+            timestampString = "448372869.443284"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-startParser"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
