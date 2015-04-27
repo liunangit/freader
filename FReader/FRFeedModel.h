@@ -17,4 +17,9 @@
 @property (nonatomic, copy) NSString *contentURL;
 @property (nonatomic, copy) NSString *content;
 
+@property (nonatomic, copy) NSString *imageURL;
+@property (nonatomic, copy) NSArray *textList;
+
+- (void)parse;
+
 @end

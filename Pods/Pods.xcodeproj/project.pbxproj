@@ -33,7 +33,6 @@
 		6A4FC2560A92D5596ED732F5 /* MWFeedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCFFF0A8DB095DFBBE6F119 /* MWFeedInfo.h */; };
 		76503C5D5DAD0781D9B91B55 /* MWFeedParser_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A2B4567AEEDF7ABDB7DC31 /* MWFeedParser_Private.h */; };
 		79BBB644F62DB4802A2C487B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9EBD2A149F3091E0E5882A /* QuartzCore.framework */; };
-		7A5A949DF39CD622EC3EADA5 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8639FC311B92F04757A415C8 /* MMDrawerController+Subclass.h */; };
 		83B7969F5268CD3DE90B9BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205651A28855D94D1BA9B177 /* Foundation.framework */; };
 		8495B6EE2D433C22D9816470 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 462BE544AC3871695ED3737C /* GTMNSString+HTML.h */; };
 		8AEA6D6AD97E5461C91F2038 /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666A6D28801884692087D196 /* MMDrawerController.h */; };
@@ -456,7 +455,6 @@
 			files = (
 				DA5C2075956DD982C03ABBFC /* MMDrawerBarButtonItem.h in Headers */,
 				3CC098EA07E6575B0AE2DE7F /* MMDrawerController+Subclass.h in Headers */,
-				7A5A949DF39CD622EC3EADA5 /* MMDrawerController+Subclass.h in Headers */,
 				8AEA6D6AD97E5461C91F2038 /* MMDrawerController.h in Headers */,
 				21E6C29F7B4CA9AC762C237D /* MMDrawerVisualState.h in Headers */,
 				FE928234CB0737B1AD92B16E /* UIViewController+MMDrawerController.h in Headers */,
@@ -593,7 +591,7 @@
 		D2E8D54508DE26B27C52CCCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 302C0D72CA974A67557ABD47 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
