@@ -30,15 +30,6 @@
                              LoadingImagesGifName:@"run@2x.gif"
                           ProgressScrollThreshold:70
                             LoadingImageFrameRate:30];
-//    if(IS_IOS7)
-//        [self.tableView addTopInsetInPortrait:64 TopInsetInLandscape:52];
-//    else if(IS_IOS8)
-//    {
-//        CGFloat landscapeTopInset = 32.0;
-//        if(IS_IPHONE6PLUS)
-//            landscapeTopInset = 44.0;
-//        [self.tableView addTopInsetInPortrait:64 TopInsetInLandscape:landscapeTopInset];
-//    }
 }
 
 - (void)onRefresh

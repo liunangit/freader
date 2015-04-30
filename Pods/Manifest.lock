@@ -21,18 +21,26 @@ PODS:
     - MWFeedParser/NSString+HTML
   - MWFeedParser/NSDate+InternetDateTime (1.0.1)
   - MWFeedParser/NSString+HTML (1.0.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - TMCache (1.2.4)
   - UzysAnimatedGifPullToRefresh (0.9.5):
     - AnimatedGIFImageSerialization (~> 0.2.0)
 
 DEPENDENCIES:
   - MMDrawerController (~> 0.5.7)
   - MWFeedParser
+  - SDWebImage (~> 3.7)
+  - TMCache (~> 1.2.4)
   - UzysAnimatedGifPullToRefresh (~> 0.9.5)
 
 SPEC CHECKSUMS:
-  AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
-  MMDrawerController: c3ab7a318ddc7e2bcd133139c3161af08c6e1197
-  MWFeedParser: 003cbf5398e99a7f2057fbe9583054fd1b84be72
-  UzysAnimatedGifPullToRefresh: a9d87bab174154c955fbd3f4af6d83b493d45a8d
+  AnimatedGIFImageSerialization: b0f0cfe71eac1ee45a3d57ae533c23b8e6f29501
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  TMCache: a93984b045a5ee84bd8941bd5e0b54296059cc52
+  UzysAnimatedGifPullToRefresh: 73b392e5fd63a288768b6cf5c2a69d6d45e9506a
 
 COCOAPODS: 0.36.0
