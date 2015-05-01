@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRBaseViewController.h"
 
 @class FRFeedModel;
 
-@interface FRFeedDetailController : UIViewController
+@interface FRFeedDetailController : FRBaseViewController
 
 @property (nonatomic, strong) FRFeedModel *feedModel;
 

@@ -1,33 +1,33 @@
 //
-//  FRSubscriptionController.m
+//  FRRSSController.m
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/14.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
-#import "FRSubscriptionController.h"
+#import "FRRSSController.h"
 #import "FRPublicDefine.h"
-#import "FRFeedManager.h"
-#import "FRSubscriptionCell.h"
+#import "FRRSSManager.h"
+#import "FRRSSCell.h"
 #import "AppDelegate.h"
 #import "MMDrawerController.h"
 #import "FRFeedController.h"
 
-@interface FRSubscriptionController () <UITableViewDataSource, UITableViewDelegate>
+@interface FRRSSController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, strong) NSArray *feedURLList;
 
 @end
 
-@implementation FRSubscriptionController
+@implementation FRRSSController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    self.feedURLList = [[FRFeedManager sharedInstance] feedURLList];
+    self.feedURLList = [[FRRSSManager sharedInstance] feedURLList];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.delegate = self;
@@ -69,9 +69,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *kSubscriptionCellIdentifer = @"kSubscriptionCellIdentifer";
-    FRSubscriptionCell *cell = (FRSubscriptionCell *)[tableView dequeueReusableCellWithIdentifier:kSubscriptionCellIdentifer];
+    FRRSSCell *cell = (FRRSSCell *)[tableView dequeueReusableCellWithIdentifier:kSubscriptionCellIdentifer];
     if (!cell) {
-        cell = [[FRSubscriptionCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSubscriptionCellIdentifer];
+        cell = [[FRRSSCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSubscriptionCellIdentifer];
     }
     
     cell.feedURL = self.feedURLList[indexPath.row];

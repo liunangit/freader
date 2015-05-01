@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FRFeedManager.h"
+#import "FRRSSManager.h"
 
-@class FRFeedInfoModel;
+@class FRRSSModel;
 @class FRFeedParser;
 
 @protocol FRFeedParserDelegate <NSObject>
 
 @optional
-- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo parser:(FRFeedParser *)feedParser;
+- (void)feedParserFinish:(FRRSSModel *)feedInfo parser:(FRFeedParser *)feedParser;
 - (void)feedParserFailed:(FRFeedParser *)feedParser url:(NSString *)URL error:(NSError *)error;
 
 @end

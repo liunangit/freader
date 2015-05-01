@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRBaseViewController.h"
 
-@interface FRPullRefreshBaseController : UIViewController
+@interface FRPullRefreshBaseController : FRBaseViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 

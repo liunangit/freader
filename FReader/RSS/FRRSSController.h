@@ -1,5 +1,5 @@
 //
-//  FRSubscriptionController.h
+//  FRRSSController.h
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRBaseViewController.h"
 
-@interface FRSubscriptionController : UIViewController
+@interface FRRSSController : FRBaseViewController
 
 @end

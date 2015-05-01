@@ -1,16 +1,16 @@
 //
-//  FRSubscriptionCell.m
+//  FRRSSCell.m
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/15.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
-#import "FRSubscriptionCell.h"
-#import "FRFeedManager.h"
-#import "FRFeedInfoModel.h"
+#import "FRRSSCell.h"
+#import "FRRSSManager.h"
+#import "FRRSSModel.h"
 
-@implementation FRSubscriptionCell
+@implementation FRRSSCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -30,20 +30,20 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    FRFeedInfoModel *infoModel = [[FRFeedManager sharedInstance] feedInfoWithURL:self.feedURL];
+    FRRSSModel *infoModel = [[FRRSSManager sharedInstance] feedInfoWithURL:self.feedURL];
     if (infoModel) {
         self.textLabel.text = infoModel.title;
     }
     else {
         self.textLabel.text = self.feedURL;
-        [[FRFeedManager sharedInstance] requestFeedInfoList:self.feedURL];
+        [[FRRSSManager sharedInstance] requestRSSList:self.feedURL];
     }
 }
 
 - (void)onFeedRequestFinish:(NSNotification *)notification
 {
     NSDictionary *dic = notification.object;
-    FRFeedInfoModel *infoModel = dic[@"FeedInfo"];
+    FRRSSModel *infoModel = dic[@"FeedInfo"];
     
     if ([infoModel.url isEqualToString:self.feedURL]) {
         self.textLabel.text = infoModel.title;

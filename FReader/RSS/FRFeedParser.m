@@ -7,7 +7,7 @@
 //
 
 #import "FRFeedParser.h"
-#import "FRFeedInfoModel.h"
+#import "FRRSSModel.h"
 #import "MWFeedParser.h"
 #import "FRFeedModel.h"
 
@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) MWFeedParser *feedParser;
 @property (nonatomic, strong) NSMutableArray *feedArray;
-@property (nonatomic, strong) FRFeedInfoModel *feedModel;
+@property (nonatomic, strong) FRRSSModel *feedModel;
 
 @end
 
@@ -55,19 +55,16 @@
 }
 
 - (void)feedParserDidStart:(MWFeedParser *)parser {
-    NSLog(@"Started Parsing: %@", parser.url);
 }
 
 - (void)feedParser:(MWFeedParser *)parser didParseFeedInfo:(MWFeedInfo *)info {
-    NSLog(@"Parsed Feed Info: “%@”", info.title);
-    FRFeedInfoModel *feedInfoModel = [[FRFeedInfoModel alloc] init];
+    FRRSSModel *feedInfoModel = [[FRRSSModel alloc] init];
     feedInfoModel.url = self.url;
     feedInfoModel.title = info.title;
     self.feedModel = feedInfoModel;
 }
 
 - (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item {
-    NSLog(@"Parsed Feed Item: “%@”", item.title);
     FRFeedModel *feedModel = [[FRFeedModel alloc] init];
     feedModel.title = item.title;
     feedModel.summary = item.summary;
@@ -79,7 +76,6 @@
 }
 
 - (void)feedParserDidFinish:(MWFeedParser *)parser {
-    NSLog(@"Finished Parsing%@", (parser.stopped ? @" (Stopped)" : @""));
     self.feedModel.feedModelList = self.feedArray;
     if ([self.delegate respondsToSelector:@selector(feedParserFinish:parser:)]) {
         [self.delegate feedParserFinish:self.feedModel parser:self];

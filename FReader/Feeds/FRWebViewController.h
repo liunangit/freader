@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRBaseViewController.h"
 
-@interface FRWebViewController : UIViewController
+@interface FRWebViewController : FRBaseViewController
 
 @property (nonatomic, copy) NSString *url;
 

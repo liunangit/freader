@@ -1,5 +1,5 @@
 //
-//  FRFeedManager.h
+//  FRRSSManager.h
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/15.
@@ -7,19 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FRFeedInfoModel.h"
+#import "FRRSSModel.h"
 
 #define kFeedRequestFinishNotification @"kFeedRequestFinishNotification"
 
-@interface FRFeedManager : NSObject
+@interface FRRSSManager : NSObject
 
-+ (FRFeedManager *)sharedInstance;
++ (FRRSSManager *)sharedInstance;
 
 - (NSArray *)feedURLList;
 - (void)updateFeedInfos;
 
-- (FRFeedInfoModel *)feedInfoWithURL:(NSString *)feedURL;
-- (void)requestFeedInfoList:(NSString *)url;
+- (FRRSSModel *)feedInfoWithURL:(NSString *)feedURL;
+- (void)requestRSSList:(NSString *)url;
 - (void)requestFeedList:(NSString *)url;
 - (void)cancelRequestWithURL:(NSString *)url;
 

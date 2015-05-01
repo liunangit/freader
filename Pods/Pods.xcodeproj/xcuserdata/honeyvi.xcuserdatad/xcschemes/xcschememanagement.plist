@@ -23,6 +23,16 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pods-TMCache.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Pods-UzysAnimatedGifPullToRefresh.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,7 +48,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0F4F927C80FFA406C6C62E82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>35D6270EE231C1585B36F7F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AA0F3BCDD93C5B47CB9E5C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +83,26 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>794B53403E5BF75AF8286394</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B171E23CB793F7BEEFD2EC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8310109221921E01F907DB07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84CE8FD0584C7912CE5A2EEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A71CA51E3B08DCC3A438600B</key>
 		<dict>
 			<key>primary</key>
@@ -74,6 +114,11 @@
 			<true/>
 		</dict>
 		<key>E9513DB31191A9270F858B19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCAD04F63EE956B12F6F6164</key>
 		<dict>
 			<key>primary</key>
 			<true/>

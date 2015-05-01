@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FRPullRefreshBaseController.h"
 
-@class FRFeedInfoModel;
+@class FRRSSModel;
 
 @interface FRFeedController : FRPullRefreshBaseController
 

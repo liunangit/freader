@@ -8,28 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		10208F05CC117F86CE68B849 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7591AFEBA481A18AA1BC69 /* libPods.a */; };
-		5950295D1AB43CC100DE16C2 /* FRSubscriptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950295C1AB43CC100DE16C2 /* FRSubscriptionController.m */; };
-		595029601AB43D8E00DE16C2 /* FRFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950295F1AB43D8E00DE16C2 /* FRFeedController.m */; };
-		595029671AB5252E00DE16C2 /* FRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 595029661AB5252E00DE16C2 /* FRBaseModel.m */; };
-		5950296A1AB5258700DE16C2 /* FRFeedInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 595029691AB5258700DE16C2 /* FRFeedInfoModel.m */; };
-		5950296D1AB525FF00DE16C2 /* FRFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950296C1AB525FF00DE16C2 /* FRFeedModel.m */; };
-		595029701AB52D5C00DE16C2 /* FRFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5950296F1AB52D5C00DE16C2 /* FRFeedManager.m */; };
-		595029731AB534DD00DE16C2 /* FRFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 595029721AB534DD00DE16C2 /* FRFeedParser.m */; };
-		595029771AB5A8BD00DE16C2 /* FRSubscriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595029761AB5A8BD00DE16C2 /* FRSubscriptionCell.m */; };
+		59A644011AF3AC8700417EA2 /* FRRSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FB1AF3AC8700417EA2 /* FRRSSCell.m */; };
+		59A644021AF3AC8700417EA2 /* FRRSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FD1AF3AC8700417EA2 /* FRRSSManager.m */; };
+		59A644031AF3AC8700417EA2 /* FRFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FE1AF3AC8700417EA2 /* FRFeedParser.m */; };
+		59A644081AF3AC9700417EA2 /* FRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644051AF3AC9700417EA2 /* FRBaseViewController.m */; };
+		59A644091AF3AC9700417EA2 /* FRPullRefreshBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644071AF3AC9700417EA2 /* FRPullRefreshBaseController.m */; };
+		59A644121AF3ACA700417EA2 /* FRTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6440B1AF3ACA700417EA2 /* FRTextNode.m */; };
+		59A644131AF3ACA700417EA2 /* FRNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6440E1AF3ACA700417EA2 /* FRNode.m */; };
+		59A644141AF3ACA700417EA2 /* FRImageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6440F1AF3ACA700417EA2 /* FRImageNode.m */; };
+		59A644151AF3ACA700417EA2 /* FRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644111AF3ACA700417EA2 /* FRLayoutManager.m */; };
+		59A6441F1AF3ACC000417EA2 /* FRFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644181AF3ACC000417EA2 /* FRFeedController.m */; };
+		59A644201AF3ACC000417EA2 /* FRFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6441A1AF3ACC000417EA2 /* FRFeedCell.m */; };
+		59A644211AF3ACC000417EA2 /* FRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6441C1AF3ACC000417EA2 /* FRWebViewController.m */; };
+		59A644221AF3ACC000417EA2 /* FRFeedDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6441E1AF3ACC000417EA2 /* FRFeedDetailController.m */; };
+		59A644261AF3ACD400417EA2 /* FRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644241AF3ACD400417EA2 /* FRUtils.m */; };
+		59A644291AF3ADE300417EA2 /* FRRSSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644281AF3ADE300417EA2 /* FRRSSController.m */; };
+		59A6442C1AF3AEC000417EA2 /* FRBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6442B1AF3AEC000417EA2 /* FRBaseNavigationController.m */; };
+		59A6442F1AF3AF5900417EA2 /* FRRSSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6442E1AF3AF5900417EA2 /* FRRSSModel.m */; };
+		59A644321AF3AF6200417EA2 /* FRFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644311AF3AF6200417EA2 /* FRFeedModel.m */; };
+		59A644351AF3AF7A00417EA2 /* FRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644341AF3AF7A00417EA2 /* FRBaseModel.m */; };
+		59A644371AF3AFA600417EA2 /* rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59A644361AF3AFA600417EA2 /* rss.txt */; };
+		59A6443A1AF3BFF700417EA2 /* FRBaseReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */; };
 		59D385561AB4311600D43FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385551AB4311600D43FB5 /* main.m */; };
 		59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385581AB4311600D43FB5 /* AppDelegate.m */; };
 		59D385611AB4311600D43FB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D385601AB4311600D43FB5 /* Images.xcassets */; };
 		59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D385621AB4311600D43FB5 /* LaunchScreen.xib */; };
-		59E04AEA1AED1D7A0057D34C /* FRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E04AE91AED1D7A0057D34C /* FRUtils.m */; };
-		B205CF491AB90EA000533E67 /* FRFeedDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF481AB90EA000533E67 /* FRFeedDetailController.m */; };
-		B205CF791AB998DE00533E67 /* FRPullRefreshBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */; };
 		B205CF801AB99B0800533E67 /* cupido@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7B1AB99B0800533E67 /* cupido@2x.gif */; };
 		B205CF811AB99B0800533E67 /* jgr@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7C1AB99B0800533E67 /* jgr@2x.gif */; };
 		B205CF821AB99B0800533E67 /* Preloader_10@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7D1AB99B0800533E67 /* Preloader_10@2x.gif */; };
 		B205CF831AB99B0800533E67 /* run@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7E1AB99B0800533E67 /* run@2x.gif */; };
 		B205CF841AB99B0800533E67 /* spinner_dropbox@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B205CF7F1AB99B0800533E67 /* spinner_dropbox@2x.gif */; };
-		B21915081AB6A2DB00027429 /* rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = B21915071AB6A2DB00027429 /* rss.txt */; };
-		B219150B1AB6A6C500027429 /* FRFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B219150A1AB6A6C500027429 /* FRFeedCell.m */; };
 		B23F9CF11AEF4893005C073A /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CCB1AEF4892005C073A /* HTMLComment.m */; };
 		B23F9CF21AEF4893005C073A /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CCD1AEF4892005C073A /* HTMLDocument.m */; };
 		B23F9CF31AEF4893005C073A /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CCF1AEF4892005C073A /* HTMLDocumentType.m */; };
@@ -47,29 +55,53 @@
 		B23F9CFF1AEF4893005C073A /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEB1AEF4893005C073A /* HTMLTokenizer.m */; };
 		B23F9D001AEF4893005C073A /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */; };
 		B23F9D011AEF4893005C073A /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */; };
-		B23F9D041AEF4FE1005C073A /* FRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9D031AEF4FE1005C073A /* FRWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		371D919A9F83D718AD40C066 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4B7591AFEBA481A18AA1BC69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5950295B1AB43CC100DE16C2 /* FRSubscriptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSubscriptionController.h; sourceTree = "<group>"; };
-		5950295C1AB43CC100DE16C2 /* FRSubscriptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSubscriptionController.m; sourceTree = "<group>"; };
-		5950295E1AB43D8E00DE16C2 /* FRFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedController.h; sourceTree = "<group>"; };
-		5950295F1AB43D8E00DE16C2 /* FRFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedController.m; sourceTree = "<group>"; };
-		595029651AB5252E00DE16C2 /* FRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBaseModel.h; sourceTree = "<group>"; };
-		595029661AB5252E00DE16C2 /* FRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBaseModel.m; sourceTree = "<group>"; };
-		595029681AB5258700DE16C2 /* FRFeedInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedInfoModel.h; sourceTree = "<group>"; };
-		595029691AB5258700DE16C2 /* FRFeedInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedInfoModel.m; sourceTree = "<group>"; };
-		5950296B1AB525FF00DE16C2 /* FRFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedModel.h; sourceTree = "<group>"; };
-		5950296C1AB525FF00DE16C2 /* FRFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedModel.m; sourceTree = "<group>"; };
-		5950296E1AB52D5C00DE16C2 /* FRFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedManager.h; sourceTree = "<group>"; };
-		5950296F1AB52D5C00DE16C2 /* FRFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedManager.m; sourceTree = "<group>"; };
-		595029711AB534DD00DE16C2 /* FRFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedParser.h; sourceTree = "<group>"; };
-		595029721AB534DD00DE16C2 /* FRFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedParser.m; sourceTree = "<group>"; };
 		595029741AB5852D00DE16C2 /* FRPublicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPublicDefine.h; sourceTree = "<group>"; };
-		595029751AB5A8BD00DE16C2 /* FRSubscriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSubscriptionCell.h; sourceTree = "<group>"; };
-		595029761AB5A8BD00DE16C2 /* FRSubscriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSubscriptionCell.m; sourceTree = "<group>"; };
+		59A643FB1AF3AC8700417EA2 /* FRRSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSCell.m; path = RSS/FRRSSCell.m; sourceTree = "<group>"; };
+		59A643FC1AF3AC8700417EA2 /* FRRSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRRSSManager.h; path = RSS/FRRSSManager.h; sourceTree = "<group>"; };
+		59A643FD1AF3AC8700417EA2 /* FRRSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSManager.m; path = RSS/FRRSSManager.m; sourceTree = "<group>"; };
+		59A643FE1AF3AC8700417EA2 /* FRFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFeedParser.m; path = RSS/FRFeedParser.m; sourceTree = "<group>"; };
+		59A643FF1AF3AC8700417EA2 /* FRRSSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRRSSCell.h; path = RSS/FRRSSCell.h; sourceTree = "<group>"; };
+		59A644001AF3AC8700417EA2 /* FRFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFeedParser.h; path = RSS/FRFeedParser.h; sourceTree = "<group>"; };
+		59A644041AF3AC9700417EA2 /* FRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRBaseViewController.h; path = Base/FRBaseViewController.h; sourceTree = "<group>"; };
+		59A644051AF3AC9700417EA2 /* FRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRBaseViewController.m; path = Base/FRBaseViewController.m; sourceTree = "<group>"; };
+		59A644061AF3AC9700417EA2 /* FRPullRefreshBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRPullRefreshBaseController.h; path = Base/FRPullRefreshBaseController.h; sourceTree = "<group>"; };
+		59A644071AF3AC9700417EA2 /* FRPullRefreshBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRPullRefreshBaseController.m; path = Base/FRPullRefreshBaseController.m; sourceTree = "<group>"; };
+		59A6440A1AF3ACA700417EA2 /* FRTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTextNode.h; path = Layout/FRTextNode.h; sourceTree = "<group>"; };
+		59A6440B1AF3ACA700417EA2 /* FRTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTextNode.m; path = Layout/FRTextNode.m; sourceTree = "<group>"; };
+		59A6440C1AF3ACA700417EA2 /* FRImageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRImageNode.h; path = Layout/FRImageNode.h; sourceTree = "<group>"; };
+		59A6440D1AF3ACA700417EA2 /* FRNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRNode.h; path = Layout/FRNode.h; sourceTree = "<group>"; };
+		59A6440E1AF3ACA700417EA2 /* FRNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRNode.m; path = Layout/FRNode.m; sourceTree = "<group>"; };
+		59A6440F1AF3ACA700417EA2 /* FRImageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRImageNode.m; path = Layout/FRImageNode.m; sourceTree = "<group>"; };
+		59A644101AF3ACA700417EA2 /* FRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRLayoutManager.h; path = Layout/FRLayoutManager.h; sourceTree = "<group>"; };
+		59A644111AF3ACA700417EA2 /* FRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRLayoutManager.m; path = Layout/FRLayoutManager.m; sourceTree = "<group>"; };
+		59A644171AF3ACC000417EA2 /* FRFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFeedController.h; path = Feeds/FRFeedController.h; sourceTree = "<group>"; };
+		59A644181AF3ACC000417EA2 /* FRFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFeedController.m; path = Feeds/FRFeedController.m; sourceTree = "<group>"; };
+		59A644191AF3ACC000417EA2 /* FRFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFeedCell.h; path = Feeds/FRFeedCell.h; sourceTree = "<group>"; };
+		59A6441A1AF3ACC000417EA2 /* FRFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFeedCell.m; path = Feeds/FRFeedCell.m; sourceTree = "<group>"; };
+		59A6441B1AF3ACC000417EA2 /* FRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRWebViewController.h; path = Feeds/FRWebViewController.h; sourceTree = "<group>"; };
+		59A6441C1AF3ACC000417EA2 /* FRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRWebViewController.m; path = Feeds/FRWebViewController.m; sourceTree = "<group>"; };
+		59A6441D1AF3ACC000417EA2 /* FRFeedDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFeedDetailController.h; path = Feeds/FRFeedDetailController.h; sourceTree = "<group>"; };
+		59A6441E1AF3ACC000417EA2 /* FRFeedDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFeedDetailController.m; path = Feeds/FRFeedDetailController.m; sourceTree = "<group>"; };
+		59A644241AF3ACD400417EA2 /* FRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRUtils.m; path = Tools/FRUtils.m; sourceTree = "<group>"; };
+		59A644251AF3ACD400417EA2 /* FRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRUtils.h; path = Tools/FRUtils.h; sourceTree = "<group>"; };
+		59A644271AF3ADE300417EA2 /* FRRSSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRRSSController.h; path = RSS/FRRSSController.h; sourceTree = "<group>"; };
+		59A644281AF3ADE300417EA2 /* FRRSSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSController.m; path = RSS/FRRSSController.m; sourceTree = "<group>"; };
+		59A6442A1AF3AEC000417EA2 /* FRBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRBaseNavigationController.h; path = Base/FRBaseNavigationController.h; sourceTree = "<group>"; };
+		59A6442B1AF3AEC000417EA2 /* FRBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRBaseNavigationController.m; path = Base/FRBaseNavigationController.m; sourceTree = "<group>"; };
+		59A6442D1AF3AF5900417EA2 /* FRRSSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRRSSModel.h; path = RSS/FRRSSModel.h; sourceTree = "<group>"; };
+		59A6442E1AF3AF5900417EA2 /* FRRSSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSModel.m; path = RSS/FRRSSModel.m; sourceTree = "<group>"; };
+		59A644301AF3AF6200417EA2 /* FRFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRFeedModel.h; path = Feeds/FRFeedModel.h; sourceTree = "<group>"; };
+		59A644311AF3AF6200417EA2 /* FRFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRFeedModel.m; path = Feeds/FRFeedModel.m; sourceTree = "<group>"; };
+		59A644331AF3AF7A00417EA2 /* FRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRBaseModel.h; path = Base/FRBaseModel.h; sourceTree = "<group>"; };
+		59A644341AF3AF7A00417EA2 /* FRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRBaseModel.m; path = Base/FRBaseModel.m; sourceTree = "<group>"; };
+		59A644361AF3AFA600417EA2 /* rss.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rss.txt; path = Resources/rss.txt; sourceTree = "<group>"; };
+		59A644381AF3BFF700417EA2 /* FRBaseReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRBaseReadingController.h; path = Base/FRBaseReadingController.h; sourceTree = "<group>"; };
+		59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRBaseReadingController.m; path = Base/FRBaseReadingController.m; sourceTree = "<group>"; };
 		59D385501AB4311600D43FB5 /* FReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D385541AB4311600D43FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D385551AB4311600D43FB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,21 +109,12 @@
 		59D385581AB4311600D43FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59D385601AB4311600D43FB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59D385631AB4311600D43FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		59E04AE81AED1D7A0057D34C /* FRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUtils.h; sourceTree = "<group>"; };
-		59E04AE91AED1D7A0057D34C /* FRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUtils.m; sourceTree = "<group>"; };
 		94161152B01378CFDD761650 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B205CF471AB90EA000533E67 /* FRFeedDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedDetailController.h; sourceTree = "<group>"; };
-		B205CF481AB90EA000533E67 /* FRFeedDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedDetailController.m; sourceTree = "<group>"; };
-		B205CF771AB998DE00533E67 /* FRPullRefreshBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPullRefreshBaseController.h; sourceTree = "<group>"; };
-		B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPullRefreshBaseController.m; sourceTree = "<group>"; };
 		B205CF7B1AB99B0800533E67 /* cupido@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cupido@2x.gif"; sourceTree = "<group>"; };
 		B205CF7C1AB99B0800533E67 /* jgr@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "jgr@2x.gif"; sourceTree = "<group>"; };
 		B205CF7D1AB99B0800533E67 /* Preloader_10@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Preloader_10@2x.gif"; sourceTree = "<group>"; };
 		B205CF7E1AB99B0800533E67 /* run@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "run@2x.gif"; sourceTree = "<group>"; };
 		B205CF7F1AB99B0800533E67 /* spinner_dropbox@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "spinner_dropbox@2x.gif"; sourceTree = "<group>"; };
-		B21915071AB6A2DB00027429 /* rss.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rss.txt; sourceTree = "<group>"; };
-		B21915091AB6A6C500027429 /* FRFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFeedCell.h; sourceTree = "<group>"; };
-		B219150A1AB6A6C500027429 /* FRFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFeedCell.m; sourceTree = "<group>"; };
 		B23F9CCA1AEF4892005C073A /* HTMLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLComment.h; path = HTML/HTMLComment.h; sourceTree = "<group>"; };
 		B23F9CCB1AEF4892005C073A /* HTMLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLComment.m; path = HTML/HTMLComment.m; sourceTree = "<group>"; };
 		B23F9CCC1AEF4892005C073A /* HTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLDocument.h; path = HTML/HTMLDocument.h; sourceTree = "<group>"; };
@@ -131,8 +154,6 @@
 		B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLTreeEnumerator.m; path = HTML/HTMLTreeEnumerator.m; sourceTree = "<group>"; };
 		B23F9CEF1AEF4893005C073A /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTMLEntities.h"; path = "HTML/NSString+HTMLEntities.h"; sourceTree = "<group>"; };
 		B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTMLEntities.m"; path = "HTML/NSString+HTMLEntities.m"; sourceTree = "<group>"; };
-		B23F9D021AEF4FE1005C073A /* FRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRWebViewController.h; sourceTree = "<group>"; };
-		B23F9D031AEF4FE1005C073A /* FRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +186,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		59385D931AF2FF0E004B830C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59A644361AF3AFA600417EA2 /* rss.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		59A643E91AF3A4F100417EA2 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				59A6440A1AF3ACA700417EA2 /* FRTextNode.h */,
+				59A6440B1AF3ACA700417EA2 /* FRTextNode.m */,
+				59A6440C1AF3ACA700417EA2 /* FRImageNode.h */,
+				59A6440D1AF3ACA700417EA2 /* FRNode.h */,
+				59A6440E1AF3ACA700417EA2 /* FRNode.m */,
+				59A6440F1AF3ACA700417EA2 /* FRImageNode.m */,
+				59A644101AF3ACA700417EA2 /* FRLayoutManager.h */,
+				59A644111AF3ACA700417EA2 /* FRLayoutManager.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		59A643F61AF3AA5300417EA2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				59A644331AF3AF7A00417EA2 /* FRBaseModel.h */,
+				59A644341AF3AF7A00417EA2 /* FRBaseModel.m */,
+				59A644041AF3AC9700417EA2 /* FRBaseViewController.h */,
+				59A644051AF3AC9700417EA2 /* FRBaseViewController.m */,
+				59A644061AF3AC9700417EA2 /* FRPullRefreshBaseController.h */,
+				59A644071AF3AC9700417EA2 /* FRPullRefreshBaseController.m */,
+				59A6442A1AF3AEC000417EA2 /* FRBaseNavigationController.h */,
+				59A6442B1AF3AEC000417EA2 /* FRBaseNavigationController.m */,
+				59A644381AF3BFF700417EA2 /* FRBaseReadingController.h */,
+				59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		59A643FA1AF3AC7400417EA2 /* RSS */ = {
+			isa = PBXGroup;
+			children = (
+				59A6442D1AF3AF5900417EA2 /* FRRSSModel.h */,
+				59A6442E1AF3AF5900417EA2 /* FRRSSModel.m */,
+				59A644271AF3ADE300417EA2 /* FRRSSController.h */,
+				59A644281AF3ADE300417EA2 /* FRRSSController.m */,
+				59A643FF1AF3AC8700417EA2 /* FRRSSCell.h */,
+				59A643FB1AF3AC8700417EA2 /* FRRSSCell.m */,
+				59A643FC1AF3AC8700417EA2 /* FRRSSManager.h */,
+				59A643FD1AF3AC8700417EA2 /* FRRSSManager.m */,
+				59A643FE1AF3AC8700417EA2 /* FRFeedParser.m */,
+				59A644001AF3AC8700417EA2 /* FRFeedParser.h */,
+			);
+			name = RSS;
+			sourceTree = "<group>";
+		};
+		59A644161AF3ACB200417EA2 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				59A644301AF3AF6200417EA2 /* FRFeedModel.h */,
+				59A644311AF3AF6200417EA2 /* FRFeedModel.m */,
+				59A644171AF3ACC000417EA2 /* FRFeedController.h */,
+				59A644181AF3ACC000417EA2 /* FRFeedController.m */,
+				59A644191AF3ACC000417EA2 /* FRFeedCell.h */,
+				59A6441A1AF3ACC000417EA2 /* FRFeedCell.m */,
+				59A6441B1AF3ACC000417EA2 /* FRWebViewController.h */,
+				59A6441C1AF3ACC000417EA2 /* FRWebViewController.m */,
+				59A6441D1AF3ACC000417EA2 /* FRFeedDetailController.h */,
+				59A6441E1AF3ACC000417EA2 /* FRFeedDetailController.m */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		59A644231AF3ACC600417EA2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				59A644241AF3ACD400417EA2 /* FRUtils.m */,
+				59A644251AF3ACD400417EA2 /* FRUtils.h */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		59D385471AB4311500D43FB5 = {
 			isa = PBXGroup;
 			children = (
@@ -186,38 +290,18 @@
 		59D385521AB4311600D43FB5 /* FReader */ = {
 			isa = PBXGroup;
 			children = (
+				59A644231AF3ACC600417EA2 /* Tools */,
+				59A644161AF3ACB200417EA2 /* Feeds */,
+				59A643FA1AF3AC7400417EA2 /* RSS */,
+				59A643F61AF3AA5300417EA2 /* Base */,
+				59A643E91AF3A4F100417EA2 /* Layout */,
 				B23F9CC91AEF4845005C073A /* HTML */,
 				59D385571AB4311600D43FB5 /* AppDelegate.h */,
 				59D385581AB4311600D43FB5 /* AppDelegate.m */,
 				595029741AB5852D00DE16C2 /* FRPublicDefine.h */,
-				B205CF771AB998DE00533E67 /* FRPullRefreshBaseController.h */,
-				B205CF781AB998DE00533E67 /* FRPullRefreshBaseController.m */,
-				5950295B1AB43CC100DE16C2 /* FRSubscriptionController.h */,
-				5950295C1AB43CC100DE16C2 /* FRSubscriptionController.m */,
-				595029751AB5A8BD00DE16C2 /* FRSubscriptionCell.h */,
-				595029761AB5A8BD00DE16C2 /* FRSubscriptionCell.m */,
-				5950295E1AB43D8E00DE16C2 /* FRFeedController.h */,
-				5950295F1AB43D8E00DE16C2 /* FRFeedController.m */,
-				B205CF471AB90EA000533E67 /* FRFeedDetailController.h */,
-				B205CF481AB90EA000533E67 /* FRFeedDetailController.m */,
-				B21915091AB6A6C500027429 /* FRFeedCell.h */,
-				B219150A1AB6A6C500027429 /* FRFeedCell.m */,
-				595029651AB5252E00DE16C2 /* FRBaseModel.h */,
-				595029661AB5252E00DE16C2 /* FRBaseModel.m */,
-				595029681AB5258700DE16C2 /* FRFeedInfoModel.h */,
-				595029691AB5258700DE16C2 /* FRFeedInfoModel.m */,
-				5950296B1AB525FF00DE16C2 /* FRFeedModel.h */,
-				5950296C1AB525FF00DE16C2 /* FRFeedModel.m */,
-				5950296E1AB52D5C00DE16C2 /* FRFeedManager.h */,
-				5950296F1AB52D5C00DE16C2 /* FRFeedManager.m */,
-				595029711AB534DD00DE16C2 /* FRFeedParser.h */,
-				595029721AB534DD00DE16C2 /* FRFeedParser.m */,
-				59E04AE81AED1D7A0057D34C /* FRUtils.h */,
-				59E04AE91AED1D7A0057D34C /* FRUtils.m */,
-				B23F9D021AEF4FE1005C073A /* FRWebViewController.h */,
-				B23F9D031AEF4FE1005C073A /* FRWebViewController.m */,
 				59D385601AB4311600D43FB5 /* Images.xcassets */,
 				59D385621AB4311600D43FB5 /* LaunchScreen.xib */,
+				59385D931AF2FF0E004B830C /* Resources */,
 				59D385531AB4311600D43FB5 /* Supporting Files */,
 			);
 			path = FReader;
@@ -226,7 +310,6 @@
 		59D385531AB4311600D43FB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B21915071AB6A2DB00027429 /* rss.txt */,
 				59D385541AB4311600D43FB5 /* Info.plist */,
 				59D385551AB4311600D43FB5 /* main.m */,
 			);
@@ -352,11 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B205CF841AB99B0800533E67 /* spinner_dropbox@2x.gif in Resources */,
-				B21915081AB6A2DB00027429 /* rss.txt in Resources */,
 				59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */,
 				59D385611AB4311600D43FB5 /* Images.xcassets in Resources */,
 				B205CF821AB99B0800533E67 /* Preloader_10@2x.gif in Resources */,
 				B205CF831AB99B0800533E67 /* run@2x.gif in Resources */,
+				59A644371AF3AFA600417EA2 /* rss.txt in Resources */,
 				B205CF811AB99B0800533E67 /* jgr@2x.gif in Resources */,
 				B205CF801AB99B0800533E67 /* cupido@2x.gif in Resources */,
 			);
@@ -402,37 +485,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B205CF791AB998DE00533E67 /* FRPullRefreshBaseController.m in Sources */,
+				59A644291AF3ADE300417EA2 /* FRRSSController.m in Sources */,
+				59A644011AF3AC8700417EA2 /* FRRSSCell.m in Sources */,
 				59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */,
+				59A644081AF3AC9700417EA2 /* FRBaseViewController.m in Sources */,
 				B23F9CF51AEF4893005C073A /* HTMLEncoding.m in Sources */,
 				B23F9CF61AEF4893005C073A /* HTMLEntities.m in Sources */,
-				595029731AB534DD00DE16C2 /* FRFeedParser.m in Sources */,
-				B23F9D041AEF4FE1005C073A /* FRWebViewController.m in Sources */,
-				B205CF491AB90EA000533E67 /* FRFeedDetailController.m in Sources */,
+				59A644141AF3ACA700417EA2 /* FRImageNode.m in Sources */,
 				B23F9CF31AEF4893005C073A /* HTMLDocumentType.m in Sources */,
 				B23F9CFC1AEF4893005C073A /* HTMLSerialization.m in Sources */,
+				59A6442F1AF3AF5900417EA2 /* FRRSSModel.m in Sources */,
+				59A644261AF3ACD400417EA2 /* FRUtils.m in Sources */,
 				B23F9CFB1AEF4893005C073A /* HTMLSelector.m in Sources */,
-				595029701AB52D5C00DE16C2 /* FRFeedManager.m in Sources */,
-				5950296D1AB525FF00DE16C2 /* FRFeedModel.m in Sources */,
-				595029601AB43D8E00DE16C2 /* FRFeedController.m in Sources */,
 				B23F9D001AEF4893005C073A /* HTMLTreeEnumerator.m in Sources */,
+				59A644151AF3ACA700417EA2 /* FRLayoutManager.m in Sources */,
+				59A6442C1AF3AEC000417EA2 /* FRBaseNavigationController.m in Sources */,
+				59A644121AF3ACA700417EA2 /* FRTextNode.m in Sources */,
 				B23F9D011AEF4893005C073A /* NSString+HTMLEntities.m in Sources */,
-				59E04AEA1AED1D7A0057D34C /* FRUtils.m in Sources */,
-				5950295D1AB43CC100DE16C2 /* FRSubscriptionController.m in Sources */,
+				59A644091AF3AC9700417EA2 /* FRPullRefreshBaseController.m in Sources */,
+				59A644351AF3AF7A00417EA2 /* FRBaseModel.m in Sources */,
+				59A644021AF3AC8700417EA2 /* FRRSSManager.m in Sources */,
 				59D385561AB4311600D43FB5 /* main.m in Sources */,
-				5950296A1AB5258700DE16C2 /* FRFeedInfoModel.m in Sources */,
+				59A6441F1AF3ACC000417EA2 /* FRFeedController.m in Sources */,
 				B23F9CFF1AEF4893005C073A /* HTMLTokenizer.m in Sources */,
+				59A644131AF3ACA700417EA2 /* FRNode.m in Sources */,
+				59A644031AF3AC8700417EA2 /* FRFeedParser.m in Sources */,
 				B23F9CF81AEF4893005C073A /* HTMLOrderedDictionary.m in Sources */,
+				59A644321AF3AF6200417EA2 /* FRFeedModel.m in Sources */,
+				59A644211AF3ACC000417EA2 /* FRWebViewController.m in Sources */,
+				59A6443A1AF3BFF700417EA2 /* FRBaseReadingController.m in Sources */,
+				59A644221AF3ACC000417EA2 /* FRFeedDetailController.m in Sources */,
 				B23F9CF71AEF4893005C073A /* HTMLNode.m in Sources */,
 				B23F9CFA1AEF4893005C073A /* HTMLPreprocessedInputStream.m in Sources */,
-				595029771AB5A8BD00DE16C2 /* FRSubscriptionCell.m in Sources */,
+				59A644201AF3ACC000417EA2 /* FRFeedCell.m in Sources */,
 				B23F9CF41AEF4893005C073A /* HTMLElement.m in Sources */,
 				B23F9CFE1AEF4893005C073A /* HTMLTextNode.m in Sources */,
 				B23F9CFD1AEF4893005C073A /* HTMLString.m in Sources */,
 				B23F9CF11AEF4893005C073A /* HTMLComment.m in Sources */,
 				B23F9CF21AEF4893005C073A /* HTMLDocument.m in Sources */,
-				595029671AB5252E00DE16C2 /* FRBaseModel.m in Sources */,
-				B219150B1AB6A6C500027429 /* FRFeedCell.m in Sources */,
 				B23F9CF91AEF4893005C073A /* HTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +633,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
 			};
 			name = Debug;
 		};
@@ -557,7 +647,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
 			};
 			name = Release;
 		};

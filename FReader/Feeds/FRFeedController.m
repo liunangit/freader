@@ -7,8 +7,8 @@
 //
 
 #import "FRFeedController.h"
-#import "FRFeedInfoModel.h"
-#import "FRFeedManager.h"
+#import "FRRSSModel.h"
+#import "FRRSSManager.h"
 #import "FRFeedCell.h"
 #import "FRFeedModel.h"
 #import "MMDrawerBarButtonItem.h"
@@ -18,7 +18,7 @@
 
 @interface FRFeedController ()
 
-@property (nonatomic, strong) FRFeedInfoModel *feedInfoModel;
+@property (nonatomic, strong) FRRSSModel *feedInfoModel;
 
 @end
 
@@ -37,7 +37,7 @@
     [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     
     if (self.feedURL.length == 0) {
-        NSString *firstURL = [[FRFeedManager sharedInstance] feedURLList].firstObject ;
+        NSString *firstURL = [[FRRSSManager sharedInstance] feedURLList].firstObject ;
         self.feedURL = firstURL;
     }
 }
@@ -67,7 +67,7 @@
     
     _feedURL = feedURL;
     
-    FRFeedInfoModel *infoModel = [[FRFeedManager sharedInstance] feedInfoWithURL:feedURL];
+    FRRSSModel *infoModel = [[FRRSSManager sharedInstance] feedInfoWithURL:feedURL];
     if (infoModel) {
         self.feedInfoModel = infoModel;
         self.title = infoModel.title;
@@ -81,14 +81,14 @@
 - (void)onRefresh
 {
     if (self.feedURL.length > 0) {
-        [[FRFeedManager sharedInstance] requestFeedList:self.feedURL];
+        [[FRRSSManager sharedInstance] requestFeedList:self.feedURL];
     }
     else {
         [self stopRefresh];
     }
 }
 
-- (void)setFeedInfoModel:(FRFeedInfoModel *)feedInfoModel
+- (void)setFeedInfoModel:(FRRSSModel *)feedInfoModel
 {
     _feedInfoModel = feedInfoModel;
     [self.tableView reloadData];
@@ -97,7 +97,7 @@
 - (void)onReceiveFeeds:(NSNotification *)notification
 {
     NSDictionary *dic = notification.object;
-    FRFeedInfoModel *infoModel = dic[@"FeedInfo"];
+    FRRSSModel *infoModel = dic[@"FeedInfo"];
     BOOL onlyFeedInfo = [dic[@"OnlyInfo"] boolValue];
     
     if ([self.feedURL isEqualToString:infoModel.url]) {

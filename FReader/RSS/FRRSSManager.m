@@ -1,31 +1,31 @@
 //
-//  FRFeedManager.m
+//  FRRSSManager.m
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/15.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
-#import "FRFeedManager.h"
+#import "FRRSSManager.h"
 #import "FRFeedParser.h"
+#import "TMCache.h"
 
-@interface FRFeedManager () <FRFeedParserDelegate>
+@interface FRRSSManager () <FRFeedParserDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary *feedRequestDic;
 @property (nonatomic, strong) NSMutableDictionary *feedInfoRequestDic;
-@property (nonatomic, strong) NSMutableDictionary *feedInfoDic;
 @property (nonatomic, strong) NSMutableArray *URLList;
 
 @end
 
-@implementation FRFeedManager
+@implementation FRRSSManager
 
-+ (FRFeedManager *)sharedInstance
++ (FRRSSManager *)sharedInstance
 {
-    static FRFeedManager *feedManager = nil;
+    static FRRSSManager *feedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^(void){
-        feedManager = [[FRFeedManager alloc] init];
+        feedManager = [[FRRSSManager alloc] init];
     });
     return feedManager;
 }
@@ -35,7 +35,6 @@
     self = [super init];
     if (self) {
         _feedRequestDic = [NSMutableDictionary dictionary];
-        _feedInfoDic = [NSMutableDictionary dictionary];
         _feedInfoRequestDic = [NSMutableDictionary dictionary];
     }
     return self;
@@ -59,19 +58,19 @@
 - (void)updateFeedInfos
 {
     for (NSString *url in self.feedURLList) {
-        [self requestFeedInfoList:url];
+        [self requestRSSList:url];
     }
 }
 
-- (FRFeedInfoModel *)feedInfoWithURL:(NSString *)feedURL
+- (FRRSSModel *)feedInfoWithURL:(NSString *)feedURL
 {
     if (feedURL.length > 0) {
-        return self.feedInfoDic[feedURL];
+        return [[TMCache sharedCache] objectForKey:feedURL];
     }
     return nil;
 }
 
-- (void)requestFeedInfoList:(NSString *)url
+- (void)requestRSSList:(NSString *)url
 {
     FRFeedParser *parser = self.feedInfoRequestDic[url];
     if (parser) {
@@ -106,7 +105,7 @@
     }
 }
 
-- (FRFeedInfoModel *)mergeFeedInfo:(FRFeedInfoModel *)oneModel with:(FRFeedInfoModel *)anotherModel
+- (FRRSSModel *)mergeFeedInfo:(FRRSSModel *)oneModel with:(FRRSSModel *)anotherModel
 {
     NSString *url = oneModel.url;
     if (url.length == 0) {
@@ -123,19 +122,20 @@
         feedList = anotherModel.feedModelList;
     }
     
-    FRFeedInfoModel *newModel = [[FRFeedInfoModel alloc] init];
+    FRRSSModel *newModel = [[FRRSSModel alloc] init];
     newModel.url = url;
     newModel.title = title;
     newModel.feedModelList = feedList;
     return newModel;
 }
 
-- (void)feedParserFinish:(FRFeedInfoModel *)feedInfo parser:(FRFeedParser *)feedParser
+- (void)feedParserFinish:(FRRSSModel *)feedInfo parser:(FRFeedParser *)feedParser
 {
     if (feedInfo) {
-        FRFeedInfoModel *feedModel = self.feedInfoDic[feedInfo.url];
-        FRFeedInfoModel *latestModel = [self mergeFeedInfo:feedModel with:feedInfo];
-        self.feedInfoDic[feedInfo.url] = latestModel;
+        TMCache *cache = [TMCache sharedCache];
+        FRRSSModel *feedModel = [cache objectForKey:feedInfo.url];
+        FRRSSModel *latestModel = [self mergeFeedInfo:feedModel with:feedInfo];
+        [cache setObject:latestModel forKey:latestModel.url];
         feedInfo = latestModel;
     }
     

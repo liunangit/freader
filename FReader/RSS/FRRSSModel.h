@@ -1,5 +1,5 @@
 //
-//  FRFeedInfoModel.h
+//  FRRSSModel.h
 //  FReader
 //
 //  Created by itedliu@qq.com on 15/3/15.
@@ -8,7 +8,7 @@
 
 #import "FRBaseModel.h"
 
-@interface FRFeedInfoModel : FRBaseModel
+@interface FRRSSModel : FRBaseModel
 
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *title;

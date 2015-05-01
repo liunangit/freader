@@ -15,4 +15,15 @@
 #define IS_IOS8  ([[[UIDevice currentDevice] systemVersion] compare:@"8" options:NSNumericSearch] != NSOrderedAscending)
 #define IS_IPHONE6PLUS ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) && [[UIScreen mainScreen] nativeScale] == 3.0f)
 
+#define fr_string_concat(A, B)  A ## B
+
+#define fr_weakify(VAR) \
+__weak __typeof__(VAR) fr_string_concat(VAR, _weak_) = (VAR)
+
+#define fr_strongify(VAR) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+__strong __typeof__(VAR) VAR = fr_string_concat(VAR, _weak_) \
+_Pragma("clang diagnostic pop")
+
 #endif

@@ -2,7 +2,7 @@
 //  FRUtils.m
 //  FReader
 //
-//  Created by honey.vi on 15/4/26.
+//  Created by itedliu@qq.com on 15/4/26.
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 

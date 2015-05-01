@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "MMDrawerController.h"
-#import "FRSubscriptionController.h"
+#import "FRRSSController.h"
 #import "FRFeedController.h"
-#import "FRFeedManager.h"
+#import "FRRSSManager.h"
+#import "FRBaseNavigationController.h"
 
 static AppDelegate *g_appDelegate;
 
@@ -32,9 +33,9 @@ static AppDelegate *g_appDelegate;
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    FRSubscriptionController *subscriptionController = [[FRSubscriptionController alloc] init];
+    FRRSSController *subscriptionController = [[FRRSSController alloc] init];
     self.feedController = [[FRFeedController alloc] init];
-    UINavigationController *centerNavController = [[UINavigationController alloc] initWithRootViewController:self.feedController];
+    FRBaseNavigationController *centerNavController = [[FRBaseNavigationController alloc] initWithRootViewController:self.feedController];
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNavController leftDrawerViewController:subscriptionController];
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
@@ -42,7 +43,7 @@ static AppDelegate *g_appDelegate;
     self.window.rootViewController = self.drawerController;
     [self.window makeKeyAndVisible];
     
-    [[FRFeedManager sharedInstance] updateFeedInfos];
+    [[FRRSSManager sharedInstance] updateFeedInfos];
     return YES;
 }
 
