@@ -71,7 +71,6 @@
     feedModel.date = item.date;
     feedModel.content = item.content;
     feedModel.contentURL = item.link;
-    [feedModel parse];
     [self.feedArray addObject:feedModel];
 }
 

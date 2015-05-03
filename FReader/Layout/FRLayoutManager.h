@@ -12,6 +12,7 @@ typedef void(^LayoutAsyncCompletion)(NSArray *nodeList);
 
 @interface FRLayoutManager : NSObject
 
++ (id)sharedInstance;
 - (void)layoutAsync:(NSString *)content completion:(LayoutAsyncCompletion)completion;
 
 @end

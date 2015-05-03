@@ -10,4 +10,9 @@
 
 @interface FRImageNode : FRNode
 
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic, strong) NSTextAttachment *attachment;
+
 @end

@@ -8,6 +8,15 @@
 
 #import "FRBaseViewController.h"
 
+@protocol FRBaseReadingProtocol <NSObject>
+
+- (UIImage *)requestImage:(NSString *)imageURL;
+
+@end
+
 @interface FRBaseReadingController : FRBaseViewController
+
+// FRNode
+@property (nonatomic, strong) NSArray *contentNodeList;
 
 @end

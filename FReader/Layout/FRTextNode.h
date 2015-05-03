@@ -10,4 +10,7 @@
 
 @interface FRTextNode : FRNode
 
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *link;
+
 @end

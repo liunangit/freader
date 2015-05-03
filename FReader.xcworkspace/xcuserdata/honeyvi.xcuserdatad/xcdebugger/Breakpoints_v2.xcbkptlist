@@ -4,19 +4,13 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/SDWebImage/SDWebImage/SDImageCache.m"
-            timestampString = "452174475.148665"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
-            landmarkName = "-queryDiskCacheForKey:done:"
-            landmarkType = "5">
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/SDWebImage/SDWebImage/SDImageCache.m"
-            timestampString = "452174495.679677"
+            filePath = "FReader/Base/FRBaseReadingController.m"
+            timestampString = "452352346.489281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
-            landmarkName = "-queryDiskCacheForKey:done:"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-showImageNode:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

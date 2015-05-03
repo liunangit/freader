@@ -10,4 +10,9 @@
 
 @implementation FRNode
 
+- (NSAttributedString *)attributedString
+{
+    return nil;
+}
+
 @end
