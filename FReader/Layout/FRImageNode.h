@@ -7,12 +7,13 @@
 //
 
 #import "FRNode.h"
+#import "FRImageAttachment.h"
 
 @interface FRImageNode : FRNode
 
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
-@property (nonatomic, strong) NSTextAttachment *attachment;
+@property (nonatomic, strong) FRImageAttachment *attachment;
 
 @end

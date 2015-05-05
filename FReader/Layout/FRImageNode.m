@@ -17,8 +17,9 @@
 
 - (NSAttributedString *)attributedString
 {
-    self.attachment = [[NSTextAttachment alloc] init];
-    self.attachment.bounds = CGRectMake(0, 0, self.width, self.height);
+    self.attachment = [[FRImageAttachment alloc] init];
+    self.attachment.imageWidth = self.width;
+    self.attachment.imageHeight = self.height;
    
     NSAttributedString *attributedStrTmp = [NSMutableAttributedString attributedStringWithAttachment:self.attachment];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];

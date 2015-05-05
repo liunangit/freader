@@ -34,26 +34,28 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         
         NSMutableArray *nodeList = [[NSMutableArray alloc] init];
-        HTMLDocument *document = [HTMLDocument documentWithString:content];
-        NSEnumerator *enumerator = [document treeEnumerator];
-        HTMLNode *object = nil;
-        
-        while ((object = enumerator.nextObject) != nil) {
-            NSLog(@"%@", object);
-            if ([object isKindOfClass:[HTMLElement class]]) {
-                HTMLElement *element = (HTMLElement *)object;
-                if ([element.tagName isEqualToString:@"img"]) {
-                    FRImageNode *imageNode = [self crateImageNode:element];
-                    if (imageNode) {
-                        [nodeList addObject:imageNode];
+        if (content.length > 0) {
+            HTMLDocument *document = [HTMLDocument documentWithString:content];
+            NSEnumerator *enumerator = [document treeEnumerator];
+            HTMLNode *object = nil;
+            
+            while ((object = enumerator.nextObject) != nil) {
+                NSLog(@"%@", object);
+                if ([object isKindOfClass:[HTMLElement class]]) {
+                    HTMLElement *element = (HTMLElement *)object;
+                    if ([element.tagName isEqualToString:@"img"]) {
+                        FRImageNode *imageNode = [self crateImageNode:element];
+                        if (imageNode) {
+                            [nodeList addObject:imageNode];
+                        }
                     }
                 }
-            }
-            else if ([object isKindOfClass:[HTMLTextNode class]]){
-                HTMLTextNode *text = (HTMLTextNode *)object;
-                FRTextNode *textNode = [self createTextNode:text];
-                if (textNode) {
-                    [nodeList addObject:textNode];
+                else if ([object isKindOfClass:[HTMLTextNode class]]){
+                    HTMLTextNode *text = (HTMLTextNode *)object;
+                    FRTextNode *textNode = [self createTextNode:text];
+                    if (textNode) {
+                        [nodeList addObject:textNode];
+                    }
                 }
             }
         }

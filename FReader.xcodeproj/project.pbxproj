@@ -55,6 +55,7 @@
 		B23F9CFF1AEF4893005C073A /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEB1AEF4893005C073A /* HTMLTokenizer.m */; };
 		B23F9D001AEF4893005C073A /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */; };
 		B23F9D011AEF4893005C073A /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */; };
+		B2A483D51AF88A8400852A9D /* FRImageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A483D41AF88A8400852A9D /* FRImageAttachment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,8 @@
 		B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLTreeEnumerator.m; path = HTML/HTMLTreeEnumerator.m; sourceTree = "<group>"; };
 		B23F9CEF1AEF4893005C073A /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTMLEntities.h"; path = "HTML/NSString+HTMLEntities.h"; sourceTree = "<group>"; };
 		B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTMLEntities.m"; path = "HTML/NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		B2A483D31AF88A8400852A9D /* FRImageAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRImageAttachment.h; path = Layout/FRImageAttachment.h; sourceTree = "<group>"; };
+		B2A483D41AF88A8400852A9D /* FRImageAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRImageAttachment.m; path = Layout/FRImageAttachment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 				59A6440F1AF3ACA700417EA2 /* FRImageNode.m */,
 				59A644101AF3ACA700417EA2 /* FRLayoutManager.h */,
 				59A644111AF3ACA700417EA2 /* FRLayoutManager.m */,
+				B2A483D31AF88A8400852A9D /* FRImageAttachment.h */,
+				B2A483D41AF88A8400852A9D /* FRImageAttachment.m */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				B23F9CFA1AEF4893005C073A /* HTMLPreprocessedInputStream.m in Sources */,
 				59A644201AF3ACC000417EA2 /* FRFeedCell.m in Sources */,
 				B23F9CF41AEF4893005C073A /* HTMLElement.m in Sources */,
+				B2A483D51AF88A8400852A9D /* FRImageAttachment.m in Sources */,
 				B23F9CFE1AEF4893005C073A /* HTMLTextNode.m in Sources */,
 				B23F9CFD1AEF4893005C073A /* HTMLString.m in Sources */,
 				B23F9CF11AEF4893005C073A /* HTMLComment.m in Sources */,

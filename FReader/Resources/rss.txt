@@ -1,3 +1,4 @@
 http://macshuo.com/?feed=rss2
 http://www.ruanyifeng.com/blog/atom.xml
 https://www.mikeash.com/pyblog/rss.py
+http://devtang.com/atom.xml
