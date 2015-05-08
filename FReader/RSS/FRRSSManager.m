@@ -117,9 +117,9 @@
         title = anotherModel.title;
     }
     
-    NSArray *feedList = oneModel.feedModelList;
+    NSArray *feedList = anotherModel.feedModelList;
     if (feedList.count == 0) {
-        feedList = anotherModel.feedModelList;
+        feedList = oneModel.feedModelList;
     }
     
     FRRSSModel *newModel = [[FRRSSModel alloc] init];

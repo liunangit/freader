@@ -126,7 +126,7 @@
     static NSString *feedCellIdentifier = @"feedCellIdentifier";
     FRFeedCell *cell = [tableView dequeueReusableCellWithIdentifier:feedCellIdentifier];
     if (!cell) {
-        cell = [[FRFeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:feedCellIdentifier];
+        cell = [[FRFeedCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:feedCellIdentifier];
     }
     
     FRFeedModel *feedModel = self.feedInfoModel.feedModelList[indexPath.row];

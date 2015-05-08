@@ -55,6 +55,7 @@
 		B23F9CFF1AEF4893005C073A /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEB1AEF4893005C073A /* HTMLTokenizer.m */; };
 		B23F9D001AEF4893005C073A /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */; };
 		B23F9D011AEF4893005C073A /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */; };
+		B24C18001AFCE6AC00B1AA90 /* FRWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C17FF1AFCE6AC00B1AA90 /* FRWebImageManager.m */; };
 		B2A483D51AF88A8400852A9D /* FRImageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A483D41AF88A8400852A9D /* FRImageAttachment.m */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,8 @@
 		B23F9CEE1AEF4893005C073A /* HTMLTreeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLTreeEnumerator.m; path = HTML/HTMLTreeEnumerator.m; sourceTree = "<group>"; };
 		B23F9CEF1AEF4893005C073A /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTMLEntities.h"; path = "HTML/NSString+HTMLEntities.h"; sourceTree = "<group>"; };
 		B23F9CF01AEF4893005C073A /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTMLEntities.m"; path = "HTML/NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		B24C17FE1AFCE6AC00B1AA90 /* FRWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRWebImageManager.h; path = Base/FRWebImageManager.h; sourceTree = "<group>"; };
+		B24C17FF1AFCE6AC00B1AA90 /* FRWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRWebImageManager.m; path = Base/FRWebImageManager.m; sourceTree = "<group>"; };
 		B2A483D31AF88A8400852A9D /* FRImageAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRImageAttachment.h; path = Layout/FRImageAttachment.h; sourceTree = "<group>"; };
 		B2A483D41AF88A8400852A9D /* FRImageAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRImageAttachment.m; path = Layout/FRImageAttachment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +230,8 @@
 				59A6442B1AF3AEC000417EA2 /* FRBaseNavigationController.m */,
 				59A644381AF3BFF700417EA2 /* FRBaseReadingController.h */,
 				59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */,
+				B24C17FE1AFCE6AC00B1AA90 /* FRWebImageManager.h */,
+				B24C17FF1AFCE6AC00B1AA90 /* FRWebImageManager.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				59A644121AF3ACA700417EA2 /* FRTextNode.m in Sources */,
 				B23F9D011AEF4893005C073A /* NSString+HTMLEntities.m in Sources */,
 				59A644091AF3AC9700417EA2 /* FRPullRefreshBaseController.m in Sources */,
+				B24C18001AFCE6AC00B1AA90 /* FRWebImageManager.m in Sources */,
 				59A644351AF3AF7A00417EA2 /* FRBaseModel.m in Sources */,
 				59A644021AF3AC8700417EA2 /* FRRSSManager.m in Sources */,
 				59D385561AB4311600D43FB5 /* main.m in Sources */,
@@ -639,7 +645,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -653,7 +660,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
+				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};

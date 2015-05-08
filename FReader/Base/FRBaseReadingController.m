@@ -10,7 +10,7 @@
 #import "FRTextNode.h"
 #import "FRImageNode.h"
 #import "FRPublicDefine.h"
-#import "SDWebImageManager.h"
+#import "FRWebImageManager.h"
 
 @interface FRBaseReadingController ()
 
@@ -63,24 +63,22 @@
 
 - (void)showImageNode:(FRImageNode *)imageNode
 {
-    NSURL *imageURL = [NSURL URLWithString:imageNode.url];
     fr_weakify(self);
-    [[SDWebImageManager sharedManager] downloadImageWithURL:imageURL
-                                                    options:0
-                                                   progress:nil
-                                                  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-                                                      if (!self) {
-                                                          return;
-                                                      }
-                                                      
-                                                      fr_strongify(self);
-                                                      if (image) {
-                                                          UIImage *resizedImage = [UIImage imageWithCGImage:image.CGImage scale:2 orientation:UIImageOrientationUp];
-                                                          imageNode.attachment.bounds = CGRectZero;
-                                                          imageNode.attachment.image = resizedImage;
-                                                          [self.textView.layoutManager invalidateDisplayForCharacterRange:imageNode.characterRange];
-                                                      }
-                                                  }];
+    [[FRWebImageManager sharedInstance] requestImageFor:imageNode.url
+                                            completion:^(UIImage *image, NSError *error, NSString *url) {
+                                                if (!self) {
+                                                    return;
+                                                }
+                                                
+                                                fr_strongify(self);
+                                                if (image) {
+                                                    UIImage *resizedImage = [UIImage imageWithCGImage:image.CGImage scale:2 orientation:UIImageOrientationUp];
+                                                    imageNode.attachment.bounds = CGRectZero;
+                                                    imageNode.attachment.image = resizedImage;
+                                                    [self.textView.layoutManager invalidateDisplayForCharacterRange:imageNode.characterRange];
+                                                }
+                                            }];
+    
 }
 
 @end

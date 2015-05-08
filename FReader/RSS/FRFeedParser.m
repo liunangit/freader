@@ -10,6 +10,7 @@
 #import "FRRSSModel.h"
 #import "MWFeedParser.h"
 #import "FRFeedModel.h"
+#import "FRUtils.h"
 
 @interface FRFeedParser () <MWFeedParserDelegate>
 
@@ -69,8 +70,12 @@
     feedModel.title = item.title;
     feedModel.summary = item.summary;
     feedModel.date = item.date;
+    if (feedModel.date) {
+        feedModel.dataStr = [FRUtils getTimeStr:[feedModel.date timeIntervalSince1970]];
+    }
     feedModel.content = item.content;
     feedModel.contentURL = item.link;
+    feedModel.author = item.author;
     [self.feedArray addObject:feedModel];
 }
 

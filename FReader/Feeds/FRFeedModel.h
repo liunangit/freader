@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) NSDate *date;
+@property (nonatomic, copy) NSString *dataStr;
 @property (nonatomic, copy) NSString *author;
 @property (nonatomic, copy) NSString *summary;
 @property (nonatomic, copy) NSString *contentURL;

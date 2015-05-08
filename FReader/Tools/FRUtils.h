@@ -6,12 +6,14 @@
 //  Copyright (c) 2015年 liunan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FRUtils : NSObject
 
 + (NSString *)feedContentPattern;
 + (NSRegularExpression *)feedContentRegularExpression;
 + (NSRegularExpression *)feedImageURLRegularExpression;
++ (NSString*)getTimeStr:(NSTimeInterval)timeStamp;
++ (UIImage *)scaleImage:(UIImage *)image withSize:(CGFloat)size;
 
 @end
