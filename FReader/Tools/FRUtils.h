@@ -13,7 +13,13 @@
 + (NSString *)feedContentPattern;
 + (NSRegularExpression *)feedContentRegularExpression;
 + (NSRegularExpression *)feedImageURLRegularExpression;
++ (NSRegularExpression *)base64ImageRegularExpression;
 + (NSString*)getTimeStr:(NSTimeInterval)timeStamp;
+
+//等比缩放，长边为size
 + (UIImage *)scaleImage:(UIImage *)image withSize:(CGFloat)size;
+
+//裁剪缩放
++ (UIImage *)image:(UIImage *)image fitInSize:(CGSize)viewsize;
 
 @end

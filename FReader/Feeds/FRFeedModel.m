@@ -8,6 +8,8 @@
 
 #import "FRFeedModel.h"
 #import "FRUtils.h"
+#import "FRLayoutManager.h"
+#import "FRPublicDefine.h"
 
 @implementation FRFeedModel
 

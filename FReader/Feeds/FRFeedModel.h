@@ -17,5 +17,6 @@
 @property (nonatomic, copy) NSString *summary;
 @property (nonatomic, copy) NSString *contentURL;
 @property (nonatomic, copy) NSString *content;
+@property (nonatomic) NSString *thumbImageURL;
 
 @end

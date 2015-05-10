@@ -8,6 +8,8 @@
 
 #import "FRFeedCell.h"
 #import "FRFeedModel.h"
+#import "FRWebImageManager.h"
+#import "FRPublicDefine.h"
 
 @implementation FRFeedCell
 
@@ -25,12 +27,17 @@
     [super prepareForReuse];
     self.textLabel.text = nil;
     self.detailTextLabel.text = nil;
+    self.feedModel = nil;
     self.imageView.image = nil;
 }
 
-- (void)layoutSubviews
+- (void)setFeedModel:(FRFeedModel *)feedModel
 {
-    [super layoutSubviews];
+    if (_feedModel == feedModel) {
+        return;
+    }
+    
+    _feedModel = feedModel;
     self.textLabel.text = self.feedModel.title;
     
     NSMutableString *detailText = [NSMutableString string];
@@ -46,6 +53,34 @@
     }
     
     self.detailTextLabel.text = detailText;
+    
+    NSString *imageUrl = self.feedModel.thumbImageURL;
+    if (imageUrl.length > 0) {
+        fr_weakify(self);
+        [[FRWebImageManager sharedInstance] requestImageFor:imageUrl
+                                                       size:100
+                                                 completion:^(UIImage *image, NSError *error, NSString *url) {
+                                                     fr_strongify(self);
+                                                     if (image && [url isEqualToString:self.feedModel.thumbImageURL]) {
+                                                         self.imageView.image = image;
+                                                         [self setNeedsLayout];
+                                                     }
+                                                 }];
+    }
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    static CGFloat offsetX = 73;
+    CGRect frame = self.textLabel.frame;
+    frame.origin.x = offsetX;
+    self.textLabel.frame = frame;
+    
+    frame = self.detailTextLabel.frame;
+    frame.origin.x = offsetX;
+    self.detailTextLabel.frame = frame;
 }
 
 @end

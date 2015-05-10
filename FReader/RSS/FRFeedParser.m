@@ -11,6 +11,7 @@
 #import "MWFeedParser.h"
 #import "FRFeedModel.h"
 #import "FRUtils.h"
+#import "FRLayoutManager.h"
 
 @interface FRFeedParser () <MWFeedParserDelegate>
 
@@ -76,6 +77,7 @@
     feedModel.content = item.content;
     feedModel.contentURL = item.link;
     feedModel.author = item.author;
+    feedModel.thumbImageURL = [FRLayoutManager getFirstImageURLWithContent:feedModel.content];
     [self.feedArray addObject:feedModel];
 }
 

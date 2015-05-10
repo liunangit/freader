@@ -33,6 +33,7 @@
                                                return;
                                            }
                                           
+                                           NSAssert([NSThread isMainThread], @" must in main thread");
                                            fr_strongify(self);
                                            self.contentNodeList = nodeList;
                                        }];

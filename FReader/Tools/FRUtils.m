@@ -20,6 +20,11 @@
     return @"(\\b(https?):\\/\\/[-A-Z0-9+&@#\\/%?=~_|!:,.;]*[-A-Z0-9+&@#\\/%=~_|])";
 }
 
++ (NSString *)base64ImagePattern
+{
+    return @"base64,(.*)";
+}
+
 + (NSRegularExpression *)feedContentRegularExpression
 {
     static dispatch_once_t onceToken;
@@ -29,6 +34,25 @@
         NSError *error = nil;
         reg = [NSRegularExpression
                regularExpressionWithPattern:[self feedContentPattern]
+               options:NSRegularExpressionCaseInsensitive
+               error:&error];
+        
+        if (error) {
+            NSLog(@"%@", error);
+        }
+    });
+    return reg;
+}
+
++ (NSRegularExpression *)base64ImageRegularExpression
+{
+    static dispatch_once_t onceToken;
+    static NSRegularExpression *reg = nil;
+    
+    dispatch_once(&onceToken, ^(void) {
+        NSError *error = nil;
+        reg = [NSRegularExpression
+               regularExpressionWithPattern:[self base64ImagePattern]
                options:NSRegularExpressionCaseInsensitive
                error:&error];
         
@@ -141,6 +165,47 @@
     UIGraphicsEndImageContext();
     
     return imageCopy;
+}
+
++ (UIImage *)image:(UIImage *)image fitInSize:(CGSize)viewsize
+{
+    // calculate the fitted size
+    CGSize size = [self fitSize:image.size inSize:viewsize];
+    
+    UIGraphicsBeginImageContext(viewsize);
+    
+    float dwidth = (viewsize.width - size.width) / 2.0f;
+    float dheight = (viewsize.height - size.height) / 2.0f;
+    
+    CGRect rect = CGRectMake(dwidth, dheight, size.width, size.height);
+    [image drawInRect:rect];
+    
+    UIImage *newimg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newimg;
+}
+
++ (CGSize)fitSize:(CGSize)realSize inSize:(CGSize)aSize
+{
+    CGFloat scale;
+    CGSize newsize = realSize;
+    
+    if (newsize.height && (newsize.height > aSize.height))
+    {
+        scale = aSize.height / newsize.height;
+        newsize.width *= scale;
+        newsize.height *= scale;
+    }
+    
+    if (newsize.width && (newsize.width >= aSize.width))
+    {
+        scale = aSize.width / newsize.width;
+        newsize.width *= scale;
+        newsize.height *= scale;
+    }
+    
+    return newsize;
 }
 
 @end

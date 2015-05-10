@@ -19,13 +19,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FReader/Base/FRBaseReadingController.m"
-            timestampString = "452352346.489281"
+            filePath = "FReader/Base/FRWebImageManager.m"
+            timestampString = "452956060.083425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-showImageNode:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-requestImageFor:completion:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FReader/Layout/FRLayoutManager.m"
+            timestampString = "452956537.625429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-crateImageNode:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

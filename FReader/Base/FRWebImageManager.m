@@ -44,16 +44,31 @@
         return;
     }
     
-    [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:url]
-                                                    options:0
-                                                   progress:nil
-                                                  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-                                                      
-                                                      if (completion) {
-                                                          completion(image, error, [imageURL absoluteString]);
-                                                      }
-                                                  }];
+    if ([url hasPrefix:@"http"]) {
+        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:url]
+                                                        options:0
+                                                       progress:nil
+                                                      completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                                                          
+                                                          if (completion) {
+                                                              completion(image, error, [imageURL absoluteString]);
+                                                          }
+                                                      }];
+    }
 }
+
+//- (NSString *)base64StringWithContent:(NSString *)content
+//{
+//    NSRegularExpression *reg = [FRUtils base64ImageRegularExpression];
+//    NSArray* match = [reg matchesInString:content options:NSMatchingReportCompletion range:NSMakeRange(0, [content length])];
+//    NSTextCheckingResult *result = match.firstObject;
+//    if (result.numberOfRanges > 1) {
+//        NSRange range = [result rangeAtIndex:1];
+//        return [content substringWithRange:range];
+//    }
+//    
+//    return nil;
+//}
 
 - (void)requestImageFor:(NSString *)url size:(NSInteger)size completion:(FRWebImageCompletionBlock)completion
 {
@@ -76,7 +91,7 @@
      {
          if (image) {
              if (completion) {
-                 completion(image, nil, composedUrl);
+                 completion(image, nil, url);
              }
              return;
          }
@@ -84,7 +99,7 @@
                     completion:^(UIImage *image, NSError *error, NSString *url) {
                         UIImage *scaledImage = nil;
                         if (image) {
-                            scaledImage = [FRUtils scaleImage:image withSize:size];
+                            scaledImage = [FRUtils image:image fitInSize:CGSizeMake(size, size)];
                             [_imageCache storeImage:scaledImage forKey:composedUrl];
                         }
                         if (completion) {

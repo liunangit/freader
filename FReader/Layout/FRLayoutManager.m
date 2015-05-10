@@ -36,17 +36,24 @@
         NSMutableArray *nodeList = [[NSMutableArray alloc] init];
         if (content.length > 0) {
             HTMLDocument *document = [HTMLDocument documentWithString:content];
+            HTMLElement *firstElement = [document firstNodeMatchingSelector:@"img"];
+            NSString *titleURL = nil;
             NSEnumerator *enumerator = [document treeEnumerator];
             HTMLNode *object = nil;
             
             while ((object = enumerator.nextObject) != nil) {
-                NSLog(@"%@", object);
                 if ([object isKindOfClass:[HTMLElement class]]) {
                     HTMLElement *element = (HTMLElement *)object;
                     if ([element.tagName isEqualToString:@"img"]) {
                         FRImageNode *imageNode = [self crateImageNode:element];
                         if (imageNode) {
                             [nodeList addObject:imageNode];
+                            
+                            if (!titleURL) {
+                                if (firstElement == element) {
+                                    titleURL = imageNode.url;
+                                }
+                            }
                         }
                     }
                 }
@@ -91,6 +98,38 @@
     }
     text.text = textStr;
     return text;
+}
+
++ (void)getFirstImageURLWithContent:(NSString *)content
+                         completion:(PaserFirstImageCompletion)completion
+{
+    if (content.length == 0) {
+        if (completion) {
+            completion(nil);
+        }
+        return;
+    }
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+        
+        NSString *url = [self getFirstImageURLWithContent:content];
+        if (completion) {
+            dispatch_async(dispatch_get_main_queue(), ^(void) {
+                completion(url);
+            });
+        }
+    });
+}
+
++ (NSString *)getFirstImageURLWithContent:(NSString *)content
+{
+    if (content.length == 0) {
+        return nil;
+    }
+    
+    HTMLDocument *document = [HTMLDocument documentWithString:content];
+    HTMLElement *firstElement = [document firstNodeMatchingSelector:@"img"];
+    return firstElement.attributes[@"src"];
 }
 
 @end

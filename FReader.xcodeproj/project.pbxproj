@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		10208F05CC117F86CE68B849 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7591AFEBA481A18AA1BC69 /* libPods.a */; };
+		59885BD71AFF895C00C1309F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59885BD61AFF895C00C1309F /* NSString+Base64.m */; };
+		59885BDA1AFF89F800C1309F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59885BD91AFF89F800C1309F /* NSData+Base64.m */; };
 		59A644011AF3AC8700417EA2 /* FRRSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FB1AF3AC8700417EA2 /* FRRSSCell.m */; };
 		59A644021AF3AC8700417EA2 /* FRRSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FD1AF3AC8700417EA2 /* FRRSSManager.m */; };
 		59A644031AF3AC8700417EA2 /* FRFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A643FE1AF3AC8700417EA2 /* FRFeedParser.m */; };
@@ -63,6 +65,10 @@
 		371D919A9F83D718AD40C066 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4B7591AFEBA481A18AA1BC69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		595029741AB5852D00DE16C2 /* FRPublicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPublicDefine.h; sourceTree = "<group>"; };
+		59885BD51AFF895C00C1309F /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "Base/NSString+Base64.h"; sourceTree = "<group>"; };
+		59885BD61AFF895C00C1309F /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "Base/NSString+Base64.m"; sourceTree = "<group>"; };
+		59885BD81AFF89F800C1309F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "Base/NSData+Base64.h"; sourceTree = "<group>"; };
+		59885BD91AFF89F800C1309F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "Base/NSData+Base64.m"; sourceTree = "<group>"; };
 		59A643FB1AF3AC8700417EA2 /* FRRSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSCell.m; path = RSS/FRRSSCell.m; sourceTree = "<group>"; };
 		59A643FC1AF3AC8700417EA2 /* FRRSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRRSSManager.h; path = RSS/FRRSSManager.h; sourceTree = "<group>"; };
 		59A643FD1AF3AC8700417EA2 /* FRRSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRRSSManager.m; path = RSS/FRRSSManager.m; sourceTree = "<group>"; };
@@ -220,6 +226,10 @@
 		59A643F61AF3AA5300417EA2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				59885BD81AFF89F800C1309F /* NSData+Base64.h */,
+				59885BD91AFF89F800C1309F /* NSData+Base64.m */,
+				59885BD51AFF895C00C1309F /* NSString+Base64.h */,
+				59885BD61AFF895C00C1309F /* NSString+Base64.m */,
 				59A644331AF3AF7A00417EA2 /* FRBaseModel.h */,
 				59A644341AF3AF7A00417EA2 /* FRBaseModel.m */,
 				59A644041AF3AC9700417EA2 /* FRBaseViewController.h */,
@@ -501,6 +511,7 @@
 				59A644081AF3AC9700417EA2 /* FRBaseViewController.m in Sources */,
 				B23F9CF51AEF4893005C073A /* HTMLEncoding.m in Sources */,
 				B23F9CF61AEF4893005C073A /* HTMLEntities.m in Sources */,
+				59885BD71AFF895C00C1309F /* NSString+Base64.m in Sources */,
 				59A644141AF3ACA700417EA2 /* FRImageNode.m in Sources */,
 				B23F9CF31AEF4893005C073A /* HTMLDocumentType.m in Sources */,
 				B23F9CFC1AEF4893005C073A /* HTMLSerialization.m in Sources */,
@@ -517,6 +528,7 @@
 				59A644351AF3AF7A00417EA2 /* FRBaseModel.m in Sources */,
 				59A644021AF3AC8700417EA2 /* FRRSSManager.m in Sources */,
 				59D385561AB4311600D43FB5 /* main.m in Sources */,
+				59885BDA1AFF89F800C1309F /* NSData+Base64.m in Sources */,
 				59A6441F1AF3ACC000417EA2 /* FRFeedController.m in Sources */,
 				B23F9CFF1AEF4893005C073A /* HTMLTokenizer.m in Sources */,
 				59A644131AF3ACA700417EA2 /* FRNode.m in Sources */,
@@ -645,7 +657,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -660,7 +672,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c67ae257-a4a7-4e52-aef5-dd83de44509f";
+				PROVISIONING_PROFILE = "0a6ef5bd-6622-4bb1-8277-f6e94b9a433d";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

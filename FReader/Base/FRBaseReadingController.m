@@ -76,6 +76,15 @@
                                                     imageNode.attachment.bounds = CGRectZero;
                                                     imageNode.attachment.image = resizedImage;
                                                     [self.textView.layoutManager invalidateDisplayForCharacterRange:imageNode.characterRange];
+                                                    
+                                                    //不知道宽高的图片，下载完成后需要刷一下。
+                                                    //但是这里setNeedsLayout不起作用，所以重设置了一下内容
+                                                    //不知道是否有更好的办法？
+                                                    if (imageNode.height == 0) {
+                                                        NSAttributedString *s = self.textView.attributedText;
+                                                        self.textView.attributedText = nil;
+                                                        self.textView.attributedText = s;
+                                                    }
                                                 }
                                             }];
     
