@@ -14,5 +14,6 @@
 @interface FRFeedController : FRPullRefreshBaseController
 
 @property (nonatomic, copy) NSString *feedURL;
+@property (nonatomic) BOOL useInDrawer; //在抽屉中使用的时候要设置导航栏按钮
 
 @end

@@ -10,6 +10,12 @@
 #import "FRRSSManager.h"
 #import "FRRSSModel.h"
 
+@interface FRRSSCell ()
+
+@property (nonatomic, strong) UIButton *addButton;
+
+@end
+
 @implementation FRRSSCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -25,18 +31,53 @@
 {
     [super prepareForReuse];
     self.feedURL = nil;
+    [self.addButton removeFromSuperview];
+    self.addButton = nil;
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    FRRSSModel *infoModel = [[FRRSSManager sharedInstance] feedInfoWithURL:self.feedURL];
-    if (infoModel) {
-        self.textLabel.text = infoModel.title;
+    
+    if (!self.infoModel) {
+        self.infoModel = [[FRRSSManager sharedInstance] feedInfoWithURL:self.feedURL];
+    }
+    
+    if (self.infoModel) {
+        self.textLabel.text = self.infoModel.title;
     }
     else {
         self.textLabel.text = self.feedURL;
         [[FRRSSManager sharedInstance] requestRSSList:self.feedURL];
+    }
+    
+    if (self.showAddBtn) {
+        if (!self.addButton) {
+            self.addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            if ([[FRRSSManager sharedInstance] hasSubscription:self.infoModel.url]) {
+                [self.addButton setTitle:@"已订阅" forState:UIControlStateNormal];
+            }
+            else {
+                [self.addButton setTitle:@"+" forState:UIControlStateNormal];
+            }
+            self.addButton.frame = CGRectMake(self.bounds.size.width - 70, (self.bounds.size.height - 30) / 2, 60, 30);
+            self.addButton.backgroundColor = [UIColor redColor];
+            [self.addButton addTarget:self action:@selector(onAddAct:) forControlEvents:UIControlEventTouchUpInside];
+            [self.contentView addSubview:self.addButton];
+        }
+    }
+}
+
+- (void)onAddAct:(id)sender
+{
+    FRRSSManager *manager = [FRRSSManager sharedInstance];
+    if ([manager hasSubscription:self.infoModel.url]) {
+        [manager removeSubscription:self.infoModel.url];
+        [self.addButton setTitle:@"+" forState:UIControlStateNormal];
+    }
+    else {
+        [manager addSubscription:self.infoModel.url];
+        [self.addButton setTitle:@"已订阅" forState:UIControlStateNormal];
     }
 }
 
@@ -47,6 +88,7 @@
     
     if ([infoModel.url isEqualToString:self.feedURL]) {
         self.textLabel.text = infoModel.title;
+        self.infoModel = infoModel;
     }
 }
 

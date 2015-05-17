@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class FRRSSModel;
+
 @interface FRRSSCell : UITableViewCell
 
 @property (nonatomic, copy) NSString *feedURL;
+@property (nonatomic, strong) FRRSSModel *infoModel;
+@property (nonatomic) BOOL showAddBtn;
 
 @end

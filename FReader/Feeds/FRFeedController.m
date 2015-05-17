@@ -27,15 +27,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupLeftMenuButton];
+    
+    if (self.useInDrawer) {
+        [self setupLeftMenuButton];
+    }
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onReceiveFeeds:) name:kFeedRequestFinishNotification object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
     
+    if (self.useInDrawer) {
+        [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    }
     if (self.feedURL.length == 0) {
         NSString *firstURL = [[FRRSSManager sharedInstance] feedURLList].firstObject ;
         self.feedURL = firstURL;
@@ -45,7 +51,10 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
+    
+    if (self.useInDrawer) {
+        [AppDelegate appDelegate].drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
+    }
 }
 
 - (void)setupLeftMenuButton
@@ -140,6 +149,7 @@
     FRFeedDetailController *detailController = [[FRFeedDetailController alloc] init];
     detailController.feedModel = feedModel;
     [self.navigationController pushViewController:detailController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

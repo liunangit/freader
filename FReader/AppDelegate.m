@@ -35,6 +35,7 @@ static AppDelegate *g_appDelegate;
     
     FRRSSController *subscriptionController = [[FRRSSController alloc] init];
     self.feedController = [[FRFeedController alloc] init];
+    self.feedController.useInDrawer = YES;
     FRBaseNavigationController *centerNavController = [[FRBaseNavigationController alloc] initWithRootViewController:self.feedController];
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNavController leftDrawerViewController:subscriptionController];
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];

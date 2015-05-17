@@ -10,6 +10,8 @@
 #import "FRFeedParser.h"
 #import "TMCache.h"
 
+#define kSubscriptionList   @"kSubscriptionList"
+
 @interface FRRSSManager () <FRFeedParserDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary *feedRequestDic;
@@ -42,17 +44,47 @@
 
 - (NSArray *)feedURLList
 {
-    if (self.URLList) {
+    if (self.URLList.count > 0) {
         return self.URLList;
     }
     
-    NSString *feedList = [[NSBundle mainBundle] pathForResource:@"rss.txt" ofType:nil];
-    if (feedList) {
-        NSString *content = [NSString stringWithContentsOfFile:feedList encoding:NSUTF8StringEncoding error:nil];
-        NSArray *array = [content componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        self.URLList = [NSMutableArray arrayWithArray:array];
+    self.URLList = [[TMCache sharedCache] objectForKey:kSubscriptionList];
+    if (self.URLList.count == 0) {
+        NSString *feedList = [[NSBundle mainBundle] pathForResource:@"rss.txt" ofType:nil];
+        if (feedList) {
+            NSString *content = [NSString stringWithContentsOfFile:feedList encoding:NSUTF8StringEncoding error:nil];
+            NSArray *array = [content componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            self.URLList = [NSMutableArray arrayWithArray:array];
+            [[TMCache sharedCache] setObject:self.URLList forKey:kSubscriptionList];
+        }
     }
     return self.URLList;
+}
+
+- (void)addSubscription:(NSString *)url
+{
+    if (url) {
+        [self.URLList addObject:url];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kSetNeedReloadRSSListNotification object:nil];
+        [[TMCache sharedCache] setObject:self.URLList forKey:kSubscriptionList];
+    }
+}
+
+- (void)removeSubscription:(NSString *)url
+{
+    if (url) {
+        [self.URLList removeObject:url];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kSetNeedReloadRSSListNotification object:nil];
+        [[TMCache sharedCache] setObject:self.URLList forKey:kSubscriptionList];
+    }
+}
+
+- (BOOL)hasSubscription:(NSString *)url
+{
+    if (url) {
+        return [self.URLList containsObject:url];
+    }
+    return NO;
 }
 
 - (void)updateFeedInfos

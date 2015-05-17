@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "FRRSSModel.h"
 
+//feeds刷新完毕
 #define kFeedRequestFinishNotification @"kFeedRequestFinishNotification"
+
+//需要重新刷新订阅列表
+#define kSetNeedReloadRSSListNotification @"kSetNeedReloadRSSListNotification"
 
 @interface FRRSSManager : NSObject
 
@@ -22,5 +26,9 @@
 - (void)requestRSSList:(NSString *)url;
 - (void)requestFeedList:(NSString *)url;
 - (void)cancelRequestWithURL:(NSString *)url;
+
+- (void)addSubscription:(NSString *)url;
+- (void)removeSubscription:(NSString *)url;
+- (BOOL)hasSubscription:(NSString *)url;
 
 @end
