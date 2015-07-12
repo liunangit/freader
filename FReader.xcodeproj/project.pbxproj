@@ -31,6 +31,8 @@
 		59A644371AF3AFA600417EA2 /* rss.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59A644361AF3AFA600417EA2 /* rss.txt */; };
 		59A6443A1AF3BFF700417EA2 /* FRBaseReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */; };
 		59CBD50A1B51538E00B90670 /* FRSearchTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBD5091B51538E00B90670 /* FRSearchTipsView.m */; };
+		59CBD5171B52984500B90670 /* FROPMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBD5161B52984500B90670 /* FROPMLManager.m */; };
+		59CBD51B1B529F6F00B90670 /* 1.opml in Resources */ = {isa = PBXBuildFile; fileRef = 59CBD5191B529F6F00B90670 /* 1.opml */; };
 		59D385561AB4311600D43FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385551AB4311600D43FB5 /* main.m */; };
 		59D385591AB4311600D43FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D385581AB4311600D43FB5 /* AppDelegate.m */; };
 		59D385611AB4311600D43FB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D385601AB4311600D43FB5 /* Images.xcassets */; };
@@ -110,6 +112,9 @@
 		59A644391AF3BFF700417EA2 /* FRBaseReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRBaseReadingController.m; path = Base/FRBaseReadingController.m; sourceTree = "<group>"; };
 		59CBD5081B51538E00B90670 /* FRSearchTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRSearchTipsView.h; path = RSS/FRSearchTipsView.h; sourceTree = "<group>"; };
 		59CBD5091B51538E00B90670 /* FRSearchTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRSearchTipsView.m; path = RSS/FRSearchTipsView.m; sourceTree = "<group>"; };
+		59CBD5151B52984500B90670 /* FROPMLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FROPMLManager.h; path = RSS/FROPMLManager.h; sourceTree = "<group>"; };
+		59CBD5161B52984500B90670 /* FROPMLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FROPMLManager.m; path = RSS/FROPMLManager.m; sourceTree = "<group>"; };
+		59CBD5191B529F6F00B90670 /* 1.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = 1.opml; path = Resources/opml/1.opml; sourceTree = "<group>"; };
 		59D385501AB4311600D43FB5 /* FReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D385541AB4311600D43FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D385551AB4311600D43FB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -201,6 +206,7 @@
 		59385D931AF2FF0E004B830C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				59CBD5191B529F6F00B90670 /* 1.opml */,
 				59A644361AF3AFA600417EA2 /* rss.txt */,
 			);
 			name = Resources;
@@ -259,6 +265,8 @@
 				59885BEB1B078CAB00C1309F /* FRSearchViewController.m */,
 				59CBD5081B51538E00B90670 /* FRSearchTipsView.h */,
 				59CBD5091B51538E00B90670 /* FRSearchTipsView.m */,
+				59CBD5151B52984500B90670 /* FROPMLManager.h */,
+				59CBD5161B52984500B90670 /* FROPMLManager.m */,
 			);
 			name = RSS;
 			sourceTree = "<group>";
@@ -458,6 +466,7 @@
 				59D385641AB4311600D43FB5 /* LaunchScreen.xib in Resources */,
 				59D385611AB4311600D43FB5 /* Images.xcassets in Resources */,
 				B205CF821AB99B0800533E67 /* Preloader_10@2x.gif in Resources */,
+				59CBD51B1B529F6F00B90670 /* 1.opml in Resources */,
 				B205CF831AB99B0800533E67 /* run@2x.gif in Resources */,
 				59A644371AF3AFA600417EA2 /* rss.txt in Resources */,
 				B205CF811AB99B0800533E67 /* jgr@2x.gif in Resources */,
@@ -546,6 +555,7 @@
 				B23F9CFD1AEF4893005C073A /* HTMLString.m in Sources */,
 				59CBD50A1B51538E00B90670 /* FRSearchTipsView.m in Sources */,
 				B23F9CF11AEF4893005C073A /* HTMLComment.m in Sources */,
+				59CBD5171B52984500B90670 /* FROPMLManager.m in Sources */,
 				B23F9CF21AEF4893005C073A /* HTMLDocument.m in Sources */,
 				B23F9CF91AEF4893005C073A /* HTMLParser.m in Sources */,
 			);

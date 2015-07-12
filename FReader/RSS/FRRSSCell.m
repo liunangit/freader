@@ -31,8 +31,10 @@
 {
     [super prepareForReuse];
     self.feedURL = nil;
+    self.infoModel = nil;
     [self.addButton removeFromSuperview];
     self.addButton = nil;
+    self.textLabel.text = nil;
 }
 
 - (void)layoutSubviews

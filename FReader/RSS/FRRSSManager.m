@@ -9,6 +9,7 @@
 #import "FRRSSManager.h"
 #import "FRFeedParser.h"
 #import "TMCache.h"
+#import "FROPMLManager.h"
 
 #define kSubscriptionList   @"kSubscriptionList"
 
@@ -48,16 +49,8 @@
         return self.URLList;
     }
     
-    self.URLList = [[TMCache sharedCache] objectForKey:kSubscriptionList];
-    if (self.URLList.count == 0) {
-        NSString *feedList = [[NSBundle mainBundle] pathForResource:@"rss.txt" ofType:nil];
-        if (feedList) {
-            NSString *content = [NSString stringWithContentsOfFile:feedList encoding:NSUTF8StringEncoding error:nil];
-            NSArray *array = [content componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            self.URLList = [NSMutableArray arrayWithArray:array];
-            [[TMCache sharedCache] setObject:self.URLList forKey:kSubscriptionList];
-        }
-    }
+    NSString *dicPath = [[NSBundle mainBundle] resourcePath];
+    self.URLList = [NSMutableArray arrayWithArray:[FROPMLManager parseOpMLFilesInFolder:dicPath]];
     return self.URLList;
 }
 

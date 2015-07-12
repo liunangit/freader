@@ -90,3 +90,9 @@
 #define COCOAPODS_VERSION_MINOR_UzysAnimatedGifPullToRefresh 9
 #define COCOAPODS_VERSION_PATCH_UzysAnimatedGifPullToRefresh 5
 
+// XMLDictionary
+#define COCOAPODS_POD_AVAILABLE_XMLDictionary
+#define COCOAPODS_VERSION_MAJOR_XMLDictionary 1
+#define COCOAPODS_VERSION_MINOR_XMLDictionary 4
+#define COCOAPODS_VERSION_PATCH_XMLDictionary 0
+

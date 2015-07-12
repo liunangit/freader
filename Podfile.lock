@@ -27,6 +27,7 @@ PODS:
   - TMCache (1.2.4)
   - UzysAnimatedGifPullToRefresh (0.9.5):
     - AnimatedGIFImageSerialization (~> 0.2.0)
+  - XMLDictionary (1.4)
 
 DEPENDENCIES:
   - MMDrawerController (~> 0.5.7)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7)
   - TMCache (~> 1.2.4)
   - UzysAnimatedGifPullToRefresh (~> 0.9.5)
+  - XMLDictionary (~> 1.4)
 
 SPEC CHECKSUMS:
   AnimatedGIFImageSerialization: b0f0cfe71eac1ee45a3d57ae533c23b8e6f29501
@@ -42,5 +44,6 @@ SPEC CHECKSUMS:
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   TMCache: a93984b045a5ee84bd8941bd5e0b54296059cc52
   UzysAnimatedGifPullToRefresh: 73b392e5fd63a288768b6cf5c2a69d6d45e9506a
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
 
 COCOAPODS: 0.36.0
