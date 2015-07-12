@@ -26,15 +26,20 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     self.title = self.feedModel.title;
     
+    NSString *content = self.feedModel.content;
+    if (content.length == 0) {
+        content = self.feedModel.summary;
+    }
+    
     fr_weakify(self);
-    [[FRLayoutManager sharedInstance] layoutAsync:self.feedModel.content
+    [[FRLayoutManager sharedInstance] layoutAsync:content
                                        completion:^(NSArray *nodeList) {
+                                           fr_strongify(self);
                                            if (!self) {
                                                return;
                                            }
                                           
                                            NSAssert([NSThread isMainThread], @" must in main thread");
-                                           fr_strongify(self);
                                            self.contentNodeList = nodeList;
                                        }];
 }

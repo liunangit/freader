@@ -61,6 +61,9 @@
                                                        size:100
                                                  completion:^(UIImage *image, NSError *error, NSString *url) {
                                                      fr_strongify(self);
+                                                     if (!self) {
+                                                         return ;
+                                                     }
                                                      if (image && [url isEqualToString:self.feedModel.thumbImageURL]) {
                                                          self.imageView.image = image;
                                                          [self setNeedsLayout];

@@ -12,9 +12,10 @@
 
 + (NSString *)feedContentPattern;
 + (NSRegularExpression *)feedContentRegularExpression;
-+ (NSRegularExpression *)feedImageURLRegularExpression;
++ (NSRegularExpression *)URLRegularExpression;
 + (NSRegularExpression *)base64ImageRegularExpression;
 + (NSString*)getTimeStr:(NSTimeInterval)timeStamp;
++ (NSString *)getFirstUrlStringInString:(NSString *)str;
 
 //等比缩放，长边为size
 + (UIImage *)scaleImage:(UIImage *)image withSize:(CGFloat)size;

@@ -77,7 +77,12 @@
     feedModel.content = item.content;
     feedModel.contentURL = item.link;
     feedModel.author = item.author;
-    feedModel.thumbImageURL = [FRLayoutManager getFirstImageURLWithContent:feedModel.content];
+    
+    NSString *content = feedModel.content;
+    if (content.length == 0) {
+        content = feedModel.summary;
+    }
+    feedModel.thumbImageURL = [FRLayoutManager getFirstImageURLWithContent:content];
     [self.feedArray addObject:feedModel];
 }
 

@@ -10,13 +10,18 @@
 #import "FRRSSManager.h"
 #import "FRRSSCell.h"
 #import "FRFeedController.h"
+#import "FRUtils.h"
+#import "FRSearchTipsView.h"
+#import "TMCache.h"
 
-@interface FRSearchViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface FRSearchViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, FRSearchTipsViewDelegate>
 
 @property (nonatomic, strong) UITextField *searchBar;
 @property (nonatomic, copy) NSString *requestURL;
 @property (nonatomic, strong) NSArray *rssModelList;
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) FRSearchTipsView *tipsView;
 
 @end
 
@@ -24,6 +29,8 @@
 
 - (void)dealloc
 {
+    _tipsView.delegate = nil;
+    [_tipsView removeFromSuperview];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -41,6 +48,52 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onReceiveRSSContent:) name:kFeedRequestFinishNotification object:nil];
     
     [self.searchBar becomeFirstResponder];
+    
+    [self showTipsViewIfNeeded];
+}
+
+- (void)showTipsViewIfNeeded
+{
+    [self removeTipsView];
+    
+    NSString *urlString = [self getPasteboardUrl];
+    if (urlString.length == 0) {
+        return;
+    }
+    
+    static NSString *tipsStringCachedKey = @"tipsStringCachedKey";
+    TMCache *cache = [TMCache sharedCache];
+    NSString *lastTipText = [cache objectForKey:tipsStringCachedKey];
+    if (lastTipText.length > 0) {
+        if ([lastTipText isEqualToString:urlString]) {
+            return;
+        }
+    }
+    
+    self.tipsView = [[FRSearchTipsView alloc] initWithFrame:CGRectMake(10, 45, self.view.bounds.size.width - 20, 30)];
+    [self.view addSubview:self.tipsView];
+    self.tipsView.delegate = self;
+    self.tipsView.text = urlString;
+//    [cache setObject:urlString forKey:tipsStringCachedKey];
+}
+
+- (void)removeTipsView
+{
+    self.tipsView.delegate = nil;
+    [self.tipsView removeFromSuperview];
+    self.tipsView = nil;
+}
+
+- (NSString *)getPasteboardUrl
+{
+    UIPasteboard *pastboard = [UIPasteboard generalPasteboard];
+    NSString *content = pastboard.string;
+    NSLog(@"%@", content);
+    if (content.length == 0) {
+        return nil;
+    }
+    
+    return [FRUtils getFirstUrlStringInString:content];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -133,13 +186,23 @@
     return YES;
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    [self removeTipsView];
+    return YES;
+}
+
 - (void)onReceiveRSSContent:(NSNotification *)notification
 {
     NSDictionary *dic = notification.object;
     FRRSSModel *infoModel = dic[@"FeedInfo"];
     NSString *url = dic[@"URL"];
     
-    if (infoModel && [url isEqualToString:self.requestURL]) {
+    if (![url isEqualToString:self.requestURL]) {
+        return;
+    }
+    
+    if (infoModel) {
         self.rssModelList = @[infoModel];
         self.tableView.tableHeaderView = nil;
         [self.tableView reloadData];
@@ -166,6 +229,17 @@
     label.textAlignment = NSTextAlignmentCenter;
     self.tableView.tableHeaderView = label;
     [self.tableView reloadData];
+}
+
+- (void)searchTipsViewDidTouched:(FRSearchTipsView *)tipsView
+{
+    self.searchBar.text = tipsView.text;
+    [self removeTipsView];
+}
+
+- (void)searchTipsViewDidClickCloseBtn:(FRSearchTipsView *)tipsView
+{
+    [self removeTipsView];
 }
 
 @end

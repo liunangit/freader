@@ -15,9 +15,24 @@
     return @"<p>(.*?)</p>";
 }
 
-+ (NSString *)feedImageURLPattern
++ (NSString *)URLPattern
 {
     return @"(\\b(https?):\\/\\/[-A-Z0-9+&@#\\/%?=~_|!:,.;]*[-A-Z0-9+&@#\\/%=~_|])";
+}
+
++ (NSString *)getFirstUrlStringInString:(NSString *)str
+{
+    if (str.length == 0) {
+        return nil;
+    }
+    
+    NSRegularExpression *reg = [self URLRegularExpression];
+    NSRange range = [reg rangeOfFirstMatchInString:str options:NSMatchingReportCompletion range:NSMakeRange(0, str.length)];
+    if (range.location == NSNotFound) {
+        return nil;
+    }
+    
+    return [str substringWithRange:range];
 }
 
 + (NSString *)base64ImagePattern
@@ -63,7 +78,7 @@
     return reg;
 }
 
-+ (NSRegularExpression *)feedImageURLRegularExpression
++ (NSRegularExpression *)URLRegularExpression
 {
     static dispatch_once_t onceToken;
     static NSRegularExpression *reg = nil;
@@ -71,7 +86,7 @@
     dispatch_once(&onceToken, ^(void) {
         NSError *error = nil;
         reg = [NSRegularExpression
-               regularExpressionWithPattern:[self feedImageURLPattern]
+               regularExpressionWithPattern:[self URLPattern]
                options:NSRegularExpressionCaseInsensitive
                error:&error];
         

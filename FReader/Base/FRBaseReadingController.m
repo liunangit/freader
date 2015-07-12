@@ -66,11 +66,11 @@
     fr_weakify(self);
     [[FRWebImageManager sharedInstance] requestImageFor:imageNode.url
                                             completion:^(UIImage *image, NSError *error, NSString *url) {
+                                                fr_strongify(self);
                                                 if (!self) {
                                                     return;
                                                 }
                                                 
-                                                fr_strongify(self);
                                                 if (image) {
                                                     UIImage *resizedImage = [UIImage imageWithCGImage:image.CGImage scale:2 orientation:UIImageOrientationUp];
                                                     imageNode.attachment.bounds = CGRectZero;

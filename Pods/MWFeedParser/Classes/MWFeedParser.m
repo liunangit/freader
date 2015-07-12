@@ -812,7 +812,7 @@
 	if (item) {
 
 		// Process before hand
-		if (!item.summary) { item.summary = item.content; item.content = nil; }
+		if (!item.summary) { item.summary = item.content;}
 		if (!item.date && item.updated) { item.date = item.updated; }
 
 		// Debug log
@@ -943,6 +943,10 @@
 		}
 		
 	}
+    else if (attributes && [attributes objectForKey:@"href"]) {
+        [MWObject setLink:[attributes objectForKey:@"href"]]; // Can be added to MWFeedItem or MWFeedInfo
+        return YES;
+    }
 	return NO;
 }
 
